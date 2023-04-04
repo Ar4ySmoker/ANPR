@@ -64,7 +64,7 @@ body {
 }
 /* ---ШАПКА------------------------------------------------------------------------- */
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
@@ -172,6 +172,9 @@ body {
   line-height: 142%;
   color: #737373;
 }
+.header-block__sub-title_m {
+  margin-bottom: 20px;
+}
 @media (max-width: 992px) {
   .header-block__title {
     font-size: 35px;
@@ -265,12 +268,12 @@ body {
   }
 }
 .main-block__button_orange {
-  background: #ff7b47;
-  color: #fff;
+  background: #ff5e1e;
+  color: #000000;
 }
 .main-block__button_orange:hover {
   background-color: #fff;
-  color: #ff7b47;
+  color: #ff5e1e;
 }
 .main-block__button_border {
   color: #000000;
@@ -397,6 +400,7 @@ body {
 }
 .advantages__body {
   display: flex;
+  border: 1px solid black;
   flex-wrap: wrap;
   margin: 0px -15px -30px;
 }
@@ -418,7 +422,9 @@ body {
 }
 
 .advantages__item {
-  background-color: #fff;
+  background-color: #f05518dc;
+
+  border-radius: 50px 10px;
   padding: 30px;
   font-weight: 700;
   text-align: center;
@@ -471,12 +477,14 @@ body {
 .practice__body {
   margin: 0px -20px -30px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .practice__column {
   padding: 0px 20px;
   margin: 0px 0px 30px 0px;
-  flex: 0 1 25%;
+  flex: 1 1 20%;
 }
 
 @media (max-width: 1040px) {
@@ -1059,8 +1067,266 @@ body {
 .span-wrap {
   background-color: #d4d4d48a;
 }
+#members-list {
+  display: none;
+}
+#Consiliul-de-Administrare {
+  display: none;
+}
+.legislatia {
+}
 /*////////////////////------------FORM-------/////////////////////////*/
 .form {
   display: flex;
   justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+}
+/*///////////////////////------Legislatia-------///////////////////*/
+.Legislatia {
+  background: #ffffff;
+  padding: 80px 0px 130px 0px;
+}
+.Legislatia__container {
+}
+.Legislatia__header {
+  margin: 0px 0px 100px 0px;
+}
+.Legislatia__body {
+  display: flex;
+  align-items: flex-start;
+}
+.Legislatia__video {
+  flex: 0 0 57%;
+  position: relative;
+  padding: 0px 0px 42.25% 0px;
+}
+.Legislatia__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.Legislatia__content {
+  flex: 1 1 auto;
+  padding: 20px 0px 0px 121px;
+}
+.Legislatia__title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.Legislatia__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.Legislatia__text {
+  color: #737373;
+  line-height: 142%;
+}
+.Legislatia__top:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+.Legislatia__items {
+}
+.Legislatia__item {
+}
+.Legislatia__item:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+
+.item-Legislatia {
+  display: flex;
+}
+.item-Legislatia__icon {
+  flex: 0 0 32px;
+}
+.item-Legislatia__body {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 20px;
+}
+.item-Legislatia__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.item-Legislatia__title:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.item-Legislatia__text {
+  color: #737373;
+  white-space: nowrap;
+  line-height: 142%;
+  width: 225px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 1080px) {
+  .Legislatia__content {
+    padding: 0px 0px 0px 50px;
+  }
+}
+@media (max-width: 950px) {
+  .Legislatia {
+    padding: 50px 0px 50px 0px;
+  }
+  .Legislatia__body {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .Legislatia__title {
+    font-size: 24px;
+  }
+  .Legislatia__content {
+    padding: 0px 0px 0px 0px;
+  }
+  .Legislatia__video {
+    padding: 0px 0px 56.25% 0px;
+  }
+  .Legislatia__video:not(:last-child) {
+    margin: 50px 0px 0px 0px;
+  }
+  .Legislatia__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .Legislatia {
+    padding: 20px 0px 50px 0px;
+  }
+  .Legislatia__top:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+  .Legislatia__video:not(:last-child) {
+    margin: 30px 0px 0px 0px;
+  }
+}
+/*///////////////////////------Activitate-------///////////////////*/
+.activitate {
+  background: #ffffff;
+  padding: 80px 0px 130px 0px;
+}
+.activitate__container {
+}
+.activitate__header {
+  margin: 0px 0px 100px 0px;
+}
+.activitate__body {
+  display: flex;
+  align-items: flex-start;
+}
+.activitate__video {
+  flex: 0 0 57%;
+  position: relative;
+  padding: 0px 0px 42.25% 0px;
+}
+.activitate__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.activitate__content {
+  flex: 1 1 auto;
+  padding: 20px 0px 0px 121px;
+}
+.activitate__title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.activitate__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.activitate__text {
+  color: #737373;
+  line-height: 142%;
+}
+.activitate__top:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+.activitate__items {
+}
+.activitate__item {
+}
+.activitate__item:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+
+.item-activitate {
+  display: flex;
+}
+.item-activitate__icon {
+  flex: 0 0 32px;
+}
+.item-activitate__body {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 20px;
+}
+.item-activitate__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.item-activitate__title:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.item-activitate__text {
+  color: #737373;
+  white-space: nowrap;
+  line-height: 142%;
+  width: 225px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 1080px) {
+  .activitate__content {
+    padding: 0px 0px 0px 50px;
+  }
+}
+@media (max-width: 950px) {
+  .activitate {
+    padding: 50px 0px 50px 0px;
+  }
+  .activitate__body {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .activitate__title {
+    font-size: 24px;
+  }
+  .Legislatia__content {
+    padding: 0px 0px 0px 0px;
+  }
+  .Legislatia__video {
+    padding: 0px 0px 56.25% 0px;
+  }
+  .Legislatia__video:not(:last-child) {
+    margin: 50px 0px 0px 0px;
+  }
+  .activitate__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .activitate {
+    padding: 20px 0px 50px 0px;
+  }
+  .activitate__top:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+  .activitate__video:not(:last-child) {
+    margin: 30px 0px 0px 0px;
+  }
 }

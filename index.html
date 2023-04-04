@@ -8,10 +8,17 @@
 		rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
 	<title>ASPR - Asociația Națională Patronală a Radiodifuzorilor</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="./js/paralax.js" defer></script>
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="first-section">
 		<header class="header">
 			<div class="header__container _container">
 				<a href="" class="header__logo">
@@ -20,568 +27,841 @@
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="" class="menu__link">Prima pagina</a>
+							<a href="#first-section" class="menu__link">Prima pagina</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Despre ANPR</a>
+							<a href="#second-section" class="menu__link">Despre ANPR</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Legislația</a>
+							<a href="#three-section" class="menu__link">Legislația</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Activitate</a>
+							<a href="#fourth-section" class="menu__link">Activitate</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Contracte</a>
+							<a href="#contacte" class="menu__link">Contracte</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<main class="page">
-			<div class="page__main-block main-block">
-				<div class="main-block__container _container">
-					<div class="main-block__body">
-						<div class="span-wrap">
-							<h1 class="main-block__title">Alăturați-vă Asociației</h1>
+		<main <div class="page__main-block main-block ">
+			<div class="main-block__container _container">
+				<div class="main-block__body">
+					<div class="span-wrap">
+						<h1 class="main-block__title">Alăturați-vă Asociației</h1>
 
-							<div class="main-block__buttons">
-								<a href="" class="main-block__button main-block__button_orange">Lorem, ipsum dolor.</a>
-								<a href="" class="main-block__button main-block__button_border">Lorem, ipsum dolor.</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="main-block__image _ibg">
-					<img src="img/mainblock/cover.jpg" alt="cover">
-				</div>
-			</div>
-			<section class="page__services services">
-				<div class="services__container _container">
-					<div class="services__body">
-						<div class="services__column">
-							<div class="services__item item-service">
-								<div class="item-service__icon"><img src="img/services/01.svg"
-										alt="Environmental Consulting"></div>
-								<h3 class="item-service__title">Lorem, ipsum.</h3>
-								<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Ipsa, dolorum?
-								</div>
-							</div>
-						</div>
-						<div class="services__column">
-							<div class="services__item item-service">
-								<div class="item-service__icon"><img src="img/services/02.svg"
-										alt="Finance and consultancy"></div>
-								<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
-								<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Itaque, sunt?
-								</div>
-							</div>
-						</div>
-						<div class="services__column">
-							<div class="services__item item-service item-service_green">
-								<div class="item-service__icon"><img src="img/services/03.svg"
-										alt="Financial Services Consulting"></div>
-								<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
-								<div class="item-service__text">Lorem ipsum dolor, sit amet consectetur adipisicing
-									elit.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__advantages advantages">
-				<div class="advantages__container _container">
-					<div class="advantages__header header-block">
-						<h2 class="header-block__title">Lorem, ipsum dolor.</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
-						</div>
-					</div>
-					<div class="advantages__body">
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/01.svg" alt="Consumer Products">
-								</div>
-								<div class="advantages__value">373 +</div>
-								<div class="advantages__text">Lorem, ipsum.</div>
-							</div>
-						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/02.svg" alt="Financial Services">
-								</div>
-								<div class="advantages__value">181 +</div>
-								<div class="advantages__text">Lorem, ipsum.</div>
-							</div>
-						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/03.svg" alt="Environmental">
-								</div>
-								<div class="advantages__value">98%</div>
-								<div class="advantages__text">lorem</div>
-							</div>
-						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/04.svg" alt="Business & Finance">
-								</div>
-								<div class="advantages__value">373 +</div>
-								<div class="advantages__text">Lorem, ipsum.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__practice practice">
-				<div class="practice__container _container">
-					<div class="practice__header header-block">
-						<h2 class="header-block__title">Lorem, ipsum.</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor sit amet. <br>Lorem, ipsum dolor sit amet consectetur adipisicing.
-						</div>
-					</div>
-					<div class="practice__body">
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="" class="item-practice__link">
-										<h4 class="item-practice__title">Lorem ipsum dolor sit.</h4>
-									</a>
-									<div class="item-practice__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nemo.
-									</div>
-								</div>
-								<a href="" class="item-practice__image _ibg">
-									<img src="./img/tmp_memers/участники ассоциации.jpg" alt="A single source of truth">
-								</a>
-							</article>
-						</div>
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="" class="item-practice__link">
-										<h4 class="item-practice__title">Lorem ipsum dolor sit amet.</h4>
-									</a>
-									<div class="item-practice__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, facilis?
-									</div>
-								</div>
-								<a href="" class="item-practice__image _ibg">
-									<img src="./img/tmp_memers/Обладатели лицензий.jpg" alt="Fastest way to organize">
-								</a>
-							</article>
-						</div>
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="" class="item-practice__link">
-										<h4 class="item-practice__title">Lorem ipsum dolor sit amet.</h4>
-									</a>
-									<div class="item-practice__text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									</div>
-								</div>
-								<a href="" class="item-practice__image _ibg">
-									<img src="./img/tmp_memers/Общие Собрания.jpg" alt="Fastest way to take action">
-								</a>
-							</article>
-						</div>
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="" class="item-practice__link">
-										<h4 class="item-practice__title">Lorem, ipsum dolor.</h4>
-									</a>
-									<div class="item-practice__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, distinctio.
-									</div>
-								</div>
-								<a href="" class="item-practice__image _ibg">
-									<img src="./img/tmp_memers/Административный Совет.jpg" alt="Work better together">
-								</a>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__whoweare whoweare">
-				<div class="whoweare__container _container">
-					<div class="whoweare__header header-block">
-						<h2 class="header-block__title">Lorem, ipsum dolor.</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet reiciendis impedit?
-						</div>
-					</div>
-					<div class="whoweare__body">
-						<div class="whoweare__video">
-							<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
-						</div>
-						<div class="whoweare__content">
-							<div class="whoweare__top">
-								<h2 class="whoweare__title">Lorem ipsum dolor sit amet.</h2>
-								<div class="whoweare__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Dolores qui similique commodi odio, inventore provident.</div>
-							</div>
-							<div class="whoweare__items">
-								<div class="whoweare__item item-whoweare">
-									<div class="item-whoweare__icon">
-										<img src="img/whoweare/icons/01.svg" alt="">
-									</div>
-									<div class="item-whoweare__body">
-										<div class="item-whoweare__title">Lorem ipsum dolor sit amet.</div>
-										<div class="item-whoweare__text">Lorem ipsum dolor sit amet, consectetur
-											adipisicing elit. Rem numquam ducimus placeat ex, maiores est.</div>
-									</div>
-								</div>
-								<div class="whoweare__item item-whoweare">
-									<div class="item-whoweare__icon">
-										<img src="img/whoweare/icons/02.svg" alt="">
-									</div>
-									<div class="item-whoweare__body">
-										<div class="item-whoweare__title">Lorem ipsum dolor sit amet.</div>
-										<div class="item-whoweare__text">Lorem ipsum dolor sit amet consectetur
-											adipisicing elit. Repellendus dicta sapiente corrupti?</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="page__clients clients">
-				<div class="clients__container _container">
-					<div class="clients__items">
-						<div class="clients__item">
-							<img src="img/clients/01.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/02.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/03.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/04.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/05.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/06.png" alt="clients">
-						</div>
-					</div>
-				</div>
-			</div>
-			<section class="page__subscribe subscribe">
-				<div class="subscribe__container _container">
-					<div class="subscribe__body">
-						<h4 class="subscribe__title">Lorem ipsum dolor sit amet.</h4>
-						<form action="#" class="subscribe__form">
-							<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
-								class="subscribe__input">
-							<button type="submit" class="subscribe__button">Subscribe</button>
-						</form>
-					</div>
-				</div>
-			</section>
-			<section class="page__getintouch getintouch">
-				<div class="getintouch__container _container">
-					<div class="getintouch__header header-block">
-						<h2 class="header-block__title">Get In Touch</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Vitae, eum.
-						</div>
-					</div>
-					<div class="getintouch__items">
-						<div class="getintouch__item item-getintouch">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/01.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
-								<a href="mailto:georgia.young@example.com"
-									class="item-getintouch__email">georgia.young@example.com</a>
-								<a href="mailto:georgia.young@ple.com"
-									class="item-getintouch__email">georgia.young@ple.com</a>
-							</div>
-							<div class="item-getintouch__label">Get Support</div>
-							<a href="" class="item-getintouch__button">Submit Request</a>
-						</div>
-						<div class="getintouch__item item-getintouch item-getintouch_active">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/02.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
-								<a href="mailto:georgia.young@example.com"
-									class="item-getintouch__email">georgia.young@example.com</a>
-								<a href="mailto:georgia.young@ple.com"
-									class="item-getintouch__email">georgia.young@ple.com</a>
-							</div>
-							<div class="item-getintouch__label">Get Support</div>
-							<a href="" class="item-getintouch__button">Submit Request</a>
-						</div>
-						<div class="getintouch__item item-getintouch">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/03.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
-								<a href="mailto:georgia.young@example.com"
-									class="item-getintouch__email">georgia.young@example.com</a>
-								<a href="mailto:georgia.young@ple.com"
-									class="item-getintouch__email">georgia.young@ple.com</a>
-							</div>
-							<div class="item-getintouch__label">Get Support</div>
-							<a href="" class="item-getintouch__button">Submit Request</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__contact contact">
-				<div class="contact__container _container">
-					<div class="contact__body">
-						<div class="contact__content">
-							<h4 class="contact__title">Lorem ipsum dolor sit amet.</h4>
-							<div class="contact__text">Lorem ipsum dolor sit amet.</div>
-						</div>
-						<a href="" class="contact__button">Contact Us</a>
-					</div>
-				</div>
-			</section>
-			<!-- FORM -->
-			<section>
-				<form id="" enctype="multipart/form-data" method="POST" action="" novalidate="novalidate">
-					<div class="">
-						<div class="">
-							<div class="">
-								<label class="control-label" for="FORM2_FIELD_company">Наименование
-									организации:</label>
-								<input class="form-control" type="text" id="FORM2_FIELD_company" name="FIELDS[company]"
-									value="">
-							</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="form-group">
-								<label class="control-label" for="FORM2_FIELD_TITLE">Контактное лицо<span
-										class="asterisk">*</span>:</label>
-								<input class="form-control" type="text" id="FORM2_FIELD_TITLE" name="FIELDS[TITLE]"
-									value="" required data-bv-message="Обязательное поле">
-							</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="form-group">
-								<label class="control-label" for="FORM2_FIELD_PHONE">Телефон<span
-										class="asterisk">*</span>:</label>
-								<input class="form-control" type="tel" id="FORM2_FIELD_PHONE" name="FIELDS[PHONE]"
-									value="" required data-bv-message="Обязательное поле"
-									data-inputmask-mask="+7 (999) 999-9999" data-mask="+7 (999) 999-9999">
-							</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="form-group">
-								<label class="control-label" for="FORM2_FIELD_EMAIL">Ваш E-mail<span
-										class="asterisk">*</span>:</label>
-								<input class="form-control" type="email" id="FORM2_FIELD_EMAIL" name="FIELDS[EMAIL]"
-									value="" required data-bv-message="Обязательное поле"
-									data-bv-emailaddress-message="E-mail введен некорректно">
-							</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="form-group">
-								<label class="control-label" for="FORM2_FIELD_MESSAGE">Сообщение<span
-										class="asterisk">*</span>:</label>
-								<div>
-									<textarea class="form-control" id="FORM2_FIELD_MESSAGE" rows="5"
-										name="FIELDS[MESSAGE]" required data-bv-message="Обязательное поле"></textarea>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="form-group">
-								<label class="control-label" for="FORM2_FIELD_DOCS">Вложить документы:</label>
-								<div class="drag_n_drop-field">
-									<!--a href="javascript:void(0);" id="file-selectdialogswitcher-FORM2_FIELD_DOCS" class="file-selectdialog-switcher" onclick="BX.onCustomEvent(this.parentNode, 'BFileDLoadFormController');return false;"><span>Загрузить файлы</span></a-->
-									<div id="file-selectdialog-FORM2_FIELD_DOCS" class="file-selectdialog">
-										<table id="file-file-template" style='display:none;'>
-											<tr class="file-inline-file" id="file-doc">
-												<td class="files-name">
-													<span class="files-text">
-														<span class="f-wrap" data-role='name'>#name#</span>
-													</span>
-												</td>
-												<td class="files-size" data-role='size'>#size#</td>
-												<td class="files-storage">
-													<div class="files-storage-block">
-														<span class="files-placement">&nbsp;</span>
-													</div>
-												</td>
-											</tr>
-										</table>
-										<div id="file-image-template" style='display:none;'>
-											<span class="feed-add-photo-block">
-												<span class="feed-add-img-wrap">
-													<img width="90" height="90" border="0" data-role='image'>
-												</span>
-												<span class="feed-add-img-title" data-role='name'>#name#</span>
-												<span class="feed-add-post-del-but"></span>
-											</span>
-										</div>
-										<div class="file-extended">
-											<div class="file-placeholder">
-												<table class="files-list" cellspacing="0">
-													<tbody class="file-placeholder-tbody">
-													</tbody>
-												</table>
-											</div>
-											<div class="file-selector">
-												Перетащите один или несколько файлов в эту область<br />
-												<span class="file-uploader"><span class="file-but-text">или выберите
-														файл на
-														компьютере</span><input class="file-fileUploader "
-														id="file-fileUploader-FORM2_FIELD_DOCS" type="file"
-														multiple='multiple' size='1' /></span>
-												<div class="webform-field-upload-notice">Выберите файл с расширением
-													(doc, docx,
-													xls, xlsx, txt, rtf, pdf, png, jpeg, jpg, gif) и размером, не
-													превышающим 20 МБ.
-												</div>
-											</div>
-										</div>
-										<div class="file-simple" style='padding:0; margin:0;'>
-											<div class="file-placeholder">
-												<table class="files-list" cellspacing="0">
-													<tbody class="file-placeholder-tbody">
-														<tr style='display: none;'>
-															<td colspan='3'></td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-											<div class="file-selector"><span class="file-uploader"><span
-														class="file-uploader-left"></span><span
-														class="file-but-text">Загрузить
-														файлы</span><span class="file-uploader-right"></span><input
-														class="file-fileUploader "
-														id="file-fileUploader-FORM2_FIELD_DOCS" type="file"
-														size='1' /></span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<div class="main-block__buttons">
+							<a href="#form" class="main-block__button main-block__button_orange">Completează
+								formularul</a>
 
-						<div class="col-xs-12">
-							<p class="warning-buy"><small>Нажимая на кнопку "Отправить", вы даете согласие на
-									обработку
-									<a target="_blank" href="/ob-assotsiatsii/privacy/">персональных
-										данных</a></small>
-							</p>
-							<button type="submit" class="btn btn-primary pull-right submit-button"
-								data-default="Отправить">Отправить</button>
-						</div>
-					</div>
-				</form>
-				<a href="./pdf/LEGE Nr. 976_ru.pdf" target="_blank">Закон о
-					Патронатах № 976 от
-					11-05-2000 </a>
-
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__top">
-				<div class="footer__main _container">
-					<div class="footer__row">
-						<div class="footer__column">
-							<div class="footer__label">Company Info</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
-									</li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Legal</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
-									</li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Features</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
-									</li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Resources</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
-									</li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Get In Touch</div>
-							<div class="footer__contacts contacts-footer">
-								<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480)
-									555-0103</a>
-								<a href="" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave.
-									Manchester, Kentucky 39495</a>
-								<a href="mailto:debra.holt@example.com"
-									class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer__bottom">
-				<div class="footer__container _container">
-					<div class="footer__copy">Made With Love By Figmaland All Right Reserved </div>
-					<div class="footer__social social">
-						<a href="" class="social__item">
-							<img src="img/footer/social/01.svg" alt="social">
-						</a>
-						<a href="" class="social__item">
-							<img src="img/footer/social/02.svg" alt="social">
-						</a>
-						<a href="" class="social__item">
-							<img src="img/footer/social/03.svg" alt="social">
-						</a>
-						<a href="" class="social__item">
-							<img src="img/footer/social/04.svg" alt="social">
-						</a>
-					</div>
-				</div>
+			<div class="main-block__image _ibg">
+				<img src="img/mainblock/cover.jpg" alt="cover">
 			</div>
-		</footer>
 	</div>
+	<section class="page__services services">
+		<div class="services__container _container">
+			<div class="services__body">
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon"><img src="img/services/01.svg" alt="Environmental Consulting">
+						</div>
+						<h3 class="item-service__title">Lorem, ipsum.</h3>
+						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Ipsa, dolorum?
+						</div>
+					</div>
+				</div>
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon"><img src="img/services/01.svg" alt="Environmental Consulting">
+						</div>
+						<h3 class="item-service__title">Lorem, ipsum.</h3>
+						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Ipsa, dolorum?
+						</div>
+					</div>
+				</div>
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon"><img src="img/services/01.svg" alt="Environmental Consulting">
+						</div>
+						<h3 class="item-service__title">Lorem, ipsum.</h3>
+						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Ipsa, dolorum?
+						</div>
+					</div>
+				</div>
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon"><img src="img/services/01.svg" alt="Environmental Consulting">
+						</div>
+						<h3 class="item-service__title">Lorem, ipsum.</h3>
+						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Ipsa, dolorum?
+						</div>
+					</div>
+				</div>
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon"><img src="img/services/02.svg" alt="Finance and consultancy">
+						</div>
+						<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
+						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit.
+							Itaque, sunt?
+						</div>
+					</div>
+				</div>
+				<div class="services__column">
+					<div class="services__item item-service item-service_green">
+						<div class="item-service__icon"><img src="img/services/03.svg"
+								alt="Financial Services Consulting"></div>
+						<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
+						<div id="second-section" class="item-service__text">Lorem ipsum dolor, sit amet consectetur
+							adipisicing
+							elit.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	</section>
+
+	<section class="page__practice practice">
+		<div class="practice__container _container">
+			<div class="practice__header header-block">
+				<h2 class="header-block__title">Despre ANPR</h2>
+				<div class="header-block__sub-title">
+
+				</div>
+			</div>
+			<div class="practice__body">
+				<div class="practice__column">
+					<article class="practice__item item-practice">
+						<div class="item-practice__content">
+							<a href="" class="item-practice__link">
+								<h4 class="item-practice__title"><a href="#membre"> Участники</a></h4>
+							</a>
+							<div class="item-practice__text">
+								<ol id="members-list">
+									<li> 1. “A. VIDEO CONTENT” SRL (TV Cinema 1)</li>
+									<li> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</li>
+									<li> 3. “AUTORADIO PRIM” SRL (Autoradio)</li>
+									<li> 4. “BASARADIO” SRL (Radio Europa Plus Moldova)</li>
+									<li> 5. “BRAVO TV” SRL (Bravo TV)</li>
+									<li> 6. “BRIGHT COMMUNICATIONS” SRL (R LIVE TV)</li>
+									<li> 7. “DGS PROF” SRL (Megapolis FM)</li>
+									<li> 8. “EUROSHOW GRUP” SRL (RU TV)</li>
+									<li> 9. “INDEPENDENT MEDIA” SRL (Aquarelle FM)</li>
+									<li> 10. “LIBERADIO” SRL (Dance FM)</li>
+									<li> 11. “MEDIA HOUSE” SRL (Love Radio)</li>
+									<li> 12. “MEDIA PRODUCTION TV” SRL (REN TV)</li>
+									<li> 13. “MEGARADIO” SRL (Radio Zum 2)</li>
+									<li> 14. “NOROC MEDIA” SRL (Noroc TV, Noroc FM)</li>
+									<li> 15. “O.O.H. MEDIA” SRL (Radio Zum 1)</li>
+									<li> 16. “RADIO 21” SRL (Radio 21)</li>
+									<li> 17. “RADIO HIT” SRL (Hit FM)</li>
+									<li> 18. “RADIO MAXIMUM” SRL (Retro FM)</li>
+									<li> 19. “RADIO POLI DISC” SRL (Radio Poli Disc – Новое Радио)</li>
+									<li> 20. “RADIO-RBS” SRL (Radio Vocea Speranței)</li>
+									<li> 21. “RADIO TOP” SRL (Radio Rock's)</li>
+									<li> 22. “REAL EXIM” SRL (Radio MD)</li>
+									<li> 23. “RECORD TEAM” SRL (Radio Record)</li>
+									<li> 24. “SĂNĂTATEA” SA (Jurnal FM)</li>
+									<li> 25. “SELECTCANAL-TV” SRL (TV N4)</li>
+									<li> 26. “STATIS TV” SRL (TV Zona M)</li>
+									<li> 27. “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)</li>
+								</ol>
+
+							</div>
+						</div>
+						<a href="" class="item-practice__image _ibg">
+							<img src="./img/tmp_memers/участники ассоциации.jpg" alt="A single source of truth">
+						</a>
+					</article>
+				</div>
+				<div class="practice__column">
+					<article class="practice__item item-practice">
+						<div class="item-practice__content">
+							<a href="" class="item-practice__link">
+								<h4 class="item-practice__title">Административный Совет</h4>
+							</a>
+							<div class="item-practice__text" id="Consiliul-de-Administrare">
+								Președintele (Administrator) — Председатель (Администратор)
+								Covalenco Andrei (“Radio Poli Disc” SRL - «Poli Disc – Новое Радио»)
+
+								Borșevici Andrei (“Selectcanal-TV” SRL - TV N4)
+								Gîndea Victor (“Sănătatea” AO - «Jurnal FM»)
+								Gutium Oleg (“Radio 21” SRL - «Radio 21»)
+								Iuvjaninov Vadim (“Radio Maximum” SRL - «Retro FM»)
+								Kaim Alexandr (“Independent Media” SRL - «Aquarelle FM»)
+								Lucinschi Chiril (“Euroshow Grup” - «RU TV»)
+								Morari Vitalii (“DGS Prof” SRL - «Megapolis FM»)
+								Țîra Dumitru (“Realitatea” - “R LIVE TV”)
+
+							</div>
+						</div>
+						<a href="" class="item-practice__image _ibg">
+							<img src="./img/tmp_memers/Общие Собрания.jpg" alt="Fastest way to organize">
+						</a>
+					</article>
+				</div>
+				<div class="practice__column">
+					<article class="practice__item item-practice">
+						<div class="item-practice__content">
+							<a href="" class="item-practice__link">
+								<h4 class="item-practice__title"><a href="#Deținătorii-de-licențe"> Обладатели
+										лицензий</a></h4>
+							</a>
+							<div class="item-practice__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</div>
+						</div>
+						<a href="" class="item-practice__image _ibg">
+							<img src="./img/tmp_memers/Обладатели лицензий.jpg" alt="Fastest way to take action">
+						</a>
+					</article>
+				</div>
+				<div class="practice__column">
+					<article class="practice__item item-practice">
+						<div class="item-practice__content">
+							<a href="" class="item-practice__link">
+								<h4 class="item-practice__title">Общие Собрания</h4>
+							</a>
+							<div class="item-practice__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, distinctio.
+							</div>
+						</div>
+						<a href="" class="item-practice__image _ibg">
+							<img src="./img/tmp_memers/Административный Совет.jpg" alt="Work better together">
+						</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="Legislatia" id="three-section">
+		<div class="Legislatia__container _container">
+
+			<div class="Legislatia__body">
+
+				<div class="Legislatia__content">
+					<div class="Legislatia__top">
+						<h2 class="Legislatia__title">Legislatia</h2>
+
+					</div>
+					<div class="Legislatia__items">
+						<div class="Legislatia__item item-whoweare">
+							<!-- <div class="item-Legislatia__icon">
+									<img src="img/whoweare/icons/01.svg" alt="">
+								</div> -->
+							<div class="item-Legislatia__body">
+								<div class="item-Legislatia__title"><a href="./pdf/LEGE Nr. 976_ro.pdf" target="_blank">
+										Lege Nr. 976
+										din 11-05-2000
+										Patronatelor</a></div>
+
+							</div>
+						</div>
+						<div class="Legislatia__item item-whoweare">
+							<!-- <div class="item-Legislatia__icon">
+							<img src="img/whoweare/icons/02.svg" alt="">
+						</div> -->
+							<div class="item-Legislatia__body">
+								<div class="item-Legislatia__title"><a href="./pdf/LEGE Nr. 62_ro.pdf"
+										target="_blank">Lege
+										Nr. 62 din
+										17-03-2022 cu privire la publicitate
+								</div></a>
+
+							</div>
+						</div>
+						<div class="Legislatia__item item-whoweare">
+							<!-- <div class="item-Legislatia__icon">
+													<img src="img/whoweare/icons/02.svg" alt="">
+												</div> -->
+							<div class="item-Legislatia__body">
+								<div class="item-Legislatia__title"><a href="./pdf/LEGE Nr. 230_ro.pdf"
+										target="_blank">Lege
+										Nr. 230 din 28-07-2022 privind dreptul de autor
+										și drepturile conex</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="Legislatia__item item-whoweare">
+							<!-- <div class="item-Legislatia__icon">
+													<img src="img/whoweare/icons/02.svg" alt="">
+												</div> -->
+							<div class="item-Legislatia__body">
+								<div class="item-Legislatia__title"><a href="./pdf/COD Nr. 174_ro.pdf"
+										target="_blank">Codul
+										Serviciilor Media Audiovizuale Nr. 174</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="activitate" id="fourth-section">
+		<div class="activitate__container _container">
+
+			<div class="activitate__body">
+
+				<div class="activitate__content">
+					<div class="activitate__top">
+						<h2 class="activitate__title"> Activitate</h2>
+
+					</div>
+					<div class="activitate__items">
+						<div class="activitate__item item-whoweare">
+							<!-- <div class="item-Legislatia__icon">
+										<img src="img/whoweare/icons/01.svg" alt="">
+									</div> -->
+							<div class="item-activitate__body">
+								<div class="item-Legislatia__title"><a
+										href="./pdf/Consiliul Audiovizualului RM din 30-03-2023.pdf" target="_blank">
+										Solicitare către Consiliul Audiovizualului RM din 30-03-2023</a></div>
+
+							</div>
+						</div>
+	</section>
+	<section class="page__advantages advantages">
+		<div class="advantages__container _container">
+			<div class="advantages__header header-block">
+				<h2 class="header-block__title"> Despre ANPR</h2>
+				<div class="header-block__sub-title">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
+				</div>
+			</div>
+			<div class="advantages__body">
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/01.svg" alt="Consumer Products">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/01.svg" alt="Consumer Products">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/01.svg" alt="Consumer Products">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/01.svg" alt="Consumer Products">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/01.svg" alt="Consumer Products">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/01.svg" alt="Consumer Products">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/02.svg" alt="Financial Services">
+						</div>
+						<div class="advantages__value">181 +</div>
+						<div class="advantages__text">Lorem, ipsum.</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/03.svg" alt="Environmental">
+						</div>
+						<div class="advantages__value">98%</div>
+						<div class="advantages__text">lorem</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/advantages/04.svg" alt="Business & Finance">
+						</div>
+						<div class="advantages__value">373 +</div>
+						<div class="advantages__text" id="membre">Lorem, ipsum.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="page__whoweare whoweare">
+		<div class="whoweare__container _container">
+			<div class="whoweare__header header-block">
+				<h2 class="header-block__title">Lorem, ipsum dolor.</h2>
+				<div class="header-block__sub-title">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet reiciendis impedit?
+				</div>
+			</div>
+			<div class="whoweare__body">
+				<div class="whoweare__video">
+					<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<div class="whoweare__content">
+					<div class="whoweare__top">
+						<h2 class="whoweare__title">Lorem ipsum dolor sit amet.</h2>
+						<div class="whoweare__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Dolores qui similique commodi odio, inventore provident.</div>
+					</div>
+					<div class="whoweare__items">
+						<div class="whoweare__item item-whoweare">
+							<div class="item-whoweare__icon">
+								<img src="img/whoweare/icons/01.svg" alt="">
+							</div>
+							<div class="item-whoweare__body">
+								<div class="item-whoweare__title">Lorem ipsum dolor sit amet.</div>
+								<div class="item-whoweare__text">Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Rem numquam ducimus placeat ex, maiores est.</div>
+							</div>
+						</div>
+						<div class="whoweare__item item-whoweare">
+							<div class="item-whoweare__icon">
+								<img src="img/whoweare/icons/02.svg" alt="">
+							</div>
+							<div class="item-whoweare__body">
+								<div class="item-whoweare__title">Lorem ipsum dolor sit amet.</div>
+								<div class="item-whoweare__text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Repellendus dicta sapiente corrupti?</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<div class="page__clients clients" id="Deținătorii-de-licențe">
+		<div class="clients__container _container">
+			<div class="clients__header header-block">
+				<h2 class="header-block__title"> Membre</h2>
+				<div class="header-block__sub-title_m">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
+				</div>
+			</div>
+			<div class="clients__items">
+
+				<div class="clients__item">
+					1. “A. VIDEO CONTENT” SRL (TV Cinema 1)
+					<img src="img/clients/01.png" alt="clients">
+				</div>
+				<div class="clients__item">2. “AER-COMUNICAȚIE” SRL (Radio 7)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">3. “AUTORADIO PRIM” SRL (Autoradio)
+					<img src="img/clients/03.png" alt="clients">
+				</div>
+				<div class="clients__item">4. “BASARADIO” SRL (Radio Europa Plus Moldova)
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+				<div class="clients__item">5. “BRAVO TV” SRL (Bravo TV)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+				<div class="clients__item">6. “BRIGHT COMMUNICATIONS” SRL (R LIVE TV)
+					<img src="img/clients/06.png" alt="clients">
+				</div>
+				<div class="clients__item">7. “DGS PROF” SRL (Megapolis FM)
+					<img src="img/clients/01.png" alt="clients">
+				</div>
+				<div class="clients__item">8. “EUROSHOW GRUP” SRL (RU TV)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">9. “INDEPENDENT MEDIA” SRL (Aquarelle FM)
+					<img src="img/clients/03.png" alt="clients">
+				</div>
+				<div class="clients__item">10. “LIBERADIO” SRL (Dance FM)
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+				<div class="clients__item">11. “MEDIA HOUSE” SRL (Love Radio)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+				<div class="clients__item" class="">12. “MEDIA PRODUCTION TV” SRL (REN TV)
+					<img src="img/clients/06.png" alt="clients">
+				</div>
+				<div class="clients__item">13. “MEGARADIO” SRL (Radio Zum 2)
+					<img src="img/clients/01.png" alt="clients">
+				</div>
+				<div class="clients__item">14. “NOROC MEDIA” SRL (Noroc TV, Noroc FM)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">15. “O.O.H. MEDIA” SRL (Radio Zum 1)
+					<img src="img/clients/03.png" alt="clients">
+				</div>
+				<div class="clients__item">16. “RADIO 21” SRL (Radio 21)
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+				<div class="clients__item">17. “RADIO HIT” SRL (Hit FM)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+				<div class="clients__item">18. “RADIO MAXIMUM” SRL (Retro FM)
+					<img src="img/clients/06.png" alt="clients">
+				</div>
+				<div class="clients__item">19. “RADIO POLI DISC” SRL (Radio Poli Disc – Новое Радио)
+					<img src="img/clients/01.png" alt="clients">
+				</div>
+				<div class="clients__item">20. “RADIO-RBS” SRL (Radio Vocea Speranței)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">21. “RADIO TOP” SRL (Radio Rock's)
+					<img src="img/clients/03.png" alt="clients">
+				</div>
+				<div class="clients__item">22. “REAL EXIM” SRL (Radio MD)
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+				<div class="clients__item">23. “RECORD TEAM” SRL (Radio Record)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+				<div class="clients__item">24. “SĂNĂTATEA” SA (Jurnal FM)
+					<img src="img/clients/06.png" alt="clients">
+				</div>
+				<div class="clients__item">25. “SELECTCANAL-TV” SRL (TV N4)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">26. “STATIS TV” SRL (TV Zona M)
+					<img src="img/clients/03.png" alt="clients">
+				</div>
+				<div class="clients__item">27. “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+				<div class="clients__item">more...
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<section class="page__subscribe subscribe">
+		<div class="subscribe__container _container">
+			<div class="subscribe__body">
+				<h4 class="subscribe__title">Lorem ipsum dolor sit amet.</h4>
+				<form action="#" class="subscribe__form">
+					<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
+						class="subscribe__input">
+					<button type="submit" class="subscribe__button">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="page__getintouch getintouch" id="contacte">
+		<div class="getintouch__container _container">
+			<div class="getintouch__header header-block">
+				<h2 class="header-block__title">Contacte</h2>
+				<div class="header-block__sub-title">
+					Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+					Vitae, eum.
+				</div>
+			</div>
+			<div class="getintouch__items">
+				<div class="getintouch__item item-getintouch">
+					<div class="item-getintouch__icon">
+						<img src="img/getintouch/01.svg" alt="getintouch">
+					</div>
+					<div class="item-getintouch__emails">
+
+						<a href="mailto:georgia.young@ple.com" class="item-getintouch__email">+373 (22) 739378</a>
+					</div>
+
+					<a href="" class="item-getintouch__button">Apel</a>
+				</div>
+				<div class="getintouch__item item-getintouch item-getintouch_active">
+					<div class="item-getintouch__icon">
+						<img src="img/getintouch/02.svg" alt="getintouch">
+					</div>
+					<div class="item-getintouch__emails">
+						<a href="mailto:georgia.young@example.com" class="item-getintouch__email">MD-2028, Кишинев,
+							шоссе Хынчешть 59/1
+						</a>
+
+					</div>
+
+					<a href="" class="item-getintouch__button">Spectacol
+					</a>
+				</div>
+				<div class="getintouch__item item-getintouch">
+					<div class="item-getintouch__icon">
+						<img src="img/getintouch/03.svg" alt="getintouch">
+					</div>
+					<div class="item-getintouch__emails" id="form">
+
+						<a href="mailto:georgia.young@ple.com"
+							class="item-getintouch__email">asociatia.patronala.anpr@gmail.com</a>
+					</div>
+
+					<a href="" class="item-getintouch__button">scrie</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FORM -->
+	<section>
+		<form id="" enctype="multipart/form-data" method="POST" action="" novalidate="novalidate">
+			<div class="">
+				<div class="">
+					<div class="">
+						<label class="control-label" for="FORM2_FIELD_company">Наименование
+							организации:</label>
+						<input class="form-control" type="text" id="FORM2_FIELD_company" name="FIELDS[company]"
+							value="">
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<label class="control-label" for="FORM2_FIELD_TITLE">Контактное лицо<span
+								class="asterisk">*</span>:</label>
+						<input class="form-control" type="text" id="FORM2_FIELD_TITLE" name="FIELDS[TITLE]" value=""
+							required data-bv-message="Обязательное поле">
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<label class="control-label" for="FORM2_FIELD_PHONE">Телефон<span
+								class="asterisk">*</span>:</label>
+						<input class="form-control" type="tel" id="FORM2_FIELD_PHONE" name="FIELDS[PHONE]" value=""
+							required data-bv-message="Обязательное поле" data-inputmask-mask="+7 (999) 999-9999"
+							data-mask="+7 (999) 999-9999">
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<label class="control-label" for="FORM2_FIELD_EMAIL">Ваш E-mail<span
+								class="asterisk">*</span>:</label>
+						<input class="form-control" type="email" id="FORM2_FIELD_EMAIL" name="FIELDS[EMAIL]" value=""
+							required data-bv-message="Обязательное поле"
+							data-bv-emailaddress-message="E-mail введен некорректно">
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<label class="control-label" for="FORM2_FIELD_MESSAGE">Сообщение<span
+								class="asterisk">*</span>:</label>
+						<div>
+							<textarea class="form-control" id="FORM2_FIELD_MESSAGE" rows="5" name="FIELDS[MESSAGE]"
+								required data-bv-message="Обязательное поле"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<label class="control-label" for="FORM2_FIELD_DOCS">Вложить документы:</label>
+						<div class="drag_n_drop-field">
+							<!--a href="javascript:void(0);" id="file-selectdialogswitcher-FORM2_FIELD_DOCS" class="file-selectdialog-switcher" onclick="BX.onCustomEvent(this.parentNode, 'BFileDLoadFormController');return false;"><span>Загрузить файлы</span></a-->
+							<div id="file-selectdialog-FORM2_FIELD_DOCS" class="file-selectdialog">
+								<table id="file-file-template" style='display:none;'>
+									<tr class="file-inline-file" id="file-doc">
+										<td class="files-name">
+											<span class="files-text">
+												<span class="f-wrap" data-role='name'>#name#</span>
+											</span>
+										</td>
+										<td class="files-size" data-role='size'>#size#</td>
+										<td class="files-storage">
+											<div class="files-storage-block">
+												<span class="files-placement">&nbsp;</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<div id="file-image-template" style='display:none;'>
+									<span class="feed-add-photo-block">
+										<span class="feed-add-img-wrap">
+											<img width="90" height="90" border="0" data-role='image'>
+										</span>
+										<span class="feed-add-img-title" data-role='name'>#name#</span>
+										<span class="feed-add-post-del-but"></span>
+									</span>
+								</div>
+								<div class="file-extended">
+									<div class="file-placeholder">
+										<table class="files-list" cellspacing="0">
+											<tbody class="file-placeholder-tbody">
+											</tbody>
+										</table>
+									</div>
+									<div class="file-selector">
+										Перетащите один или несколько файлов в эту область<br />
+										<span class="file-uploader"><span class="file-but-text">или выберите
+												файл на
+												компьютере</span><input class="file-fileUploader "
+												id="file-fileUploader-FORM2_FIELD_DOCS" type="file" multiple='multiple'
+												size='1' /></span>
+										<div class="webform-field-upload-notice">Выберите файл с расширением
+											(doc, docx,
+											xls, xlsx, txt, rtf, pdf, png, jpeg, jpg, gif) и размером, не
+											превышающим 20 МБ.
+										</div>
+									</div>
+								</div>
+								<div class="file-simple" style='padding:0; margin:0;'>
+									<div class="file-placeholder">
+										<table class="files-list" cellspacing="0">
+											<tbody class="file-placeholder-tbody">
+												<tr style='display: none;'>
+													<td colspan='3'></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="file-selector"><span class="file-uploader"><span
+												class="file-uploader-left"></span><span class="file-but-text">Загрузить
+												файлы</span><span class="file-uploader-right"></span><input
+												class="file-fileUploader " id="file-fileUploader-FORM2_FIELD_DOCS"
+												type="file" size='1' /></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12">
+					<p class="warning-buy"><small>Нажимая на кнопку "Отправить", вы даете согласие на
+							обработку
+							<a target="_blank" href="/ob-assotsiatsii/privacy/">персональных
+								данных</a></small>
+					</p>
+					<button type="submit" class="btn btn-primary pull-right submit-button"
+						data-default="Отправить">Отправить</button>
+				</div>
+			</div>
+		</form>
+		<a href="./pdf/LEGE Nr. 976_ru.pdf" target="_blank">Закон о
+			Патронатах № 976 от
+			11-05-2000 </a>
+
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="footer__main _container">
+				<div class="footer__row">
+					<div class="footer__column">
+						<div class="footer__label">ANDR</div>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
+								</li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div class="footer__label">Legal</div>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
+								</li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div class="footer__label">Features</div>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
+								</li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div class="footer__label">Resources</div>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a>
+								</li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div class="footer__label">Get In Touch</div>
+						<div class="footer__contacts contacts-footer">
+							<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480)
+								555-0103</a>
+							<a href="" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave.
+								Manchester, Kentucky 39495</a>
+							<a href="mailto:debra.holt@example.com"
+								class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__container _container">
+				<div class="footer__copy">Made With Love By Figmaland All Right Reserved </div>
+				<div class="footer__social social">
+					<a href="" class="social__item">
+						<img src="img/footer/social/01.svg" alt="social">
+					</a>
+					<a href="" class="social__item">
+						<img src="img/footer/social/02.svg" alt="social">
+					</a>
+					<a href="" class="social__item">
+						<img src="img/footer/social/03.svg" alt="social">
+					</a>
+					<a href="" class="social__item">
+						<img src="img/footer/social/04.svg" alt="social">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<script src="./js/jquery.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
