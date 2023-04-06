@@ -15,13 +15,17 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 	<script src="./js/paralax.js" defer></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script src="./js/email.js" defer></script>
+	<script src="./js/script.js" defer></script>
 </head>
 
 <body>
 	<div class="wrapper" id="first-section">
 		<header class="header">
 			<div class="header__container _container">
-				<a href="" class="header__logo">
+				<!-- На других страницах это ссылка будет вести на страницу index.html -->
+				<a href="." class="header__logo">
 					ASPR
 				</a>
 				<nav class="header__menu menu">
@@ -43,6 +47,39 @@
 						</li>
 					</ul>
 				</nav>
+				<button id="burger__menu">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5 7H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 12H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 17H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<div class="header__slider" id="slider">
+					<button id="close__burger"><svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle cx="12" cy="12" r="9" fill="#7E869E" fill-opacity="0.25" />
+							<path d="M16 8L8 16" stroke="#222222" stroke-width="1.2" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 8L16 16" stroke="#222222" stroke-width="1.2" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</button>
+					<ul class="menu__list-slide">
+						<li class="list__item slide_item"><a href="#first-section" class="menu__link">Prima pagina</a>
+						</li>
+						<li class="list__item slide_item"><a href="#second-section" class="menu__link">Despre ANPR</a>
+						</li>
+						<li class="list__item slide_item"><a href="#three-section" class="menu__link">Legislația</a>
+						</li>
+						<li class="list__item slide_item"><a href="#fourth-section" class="menu__link">Activitate</a>
+						</li>
+						<li class="list__item slide_item"><a href="#fourth-section" class="menu__link">Activitate</a>
+						</li>
+						<li class="list__item slide_item">
+							<a href="#contacte" class="menu__link">Contracte</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main <div class="page__main-block main-block ">
@@ -64,7 +101,7 @@
 			</div>
 	</div>
 	<section class="page__services services">
-		<div class="services__container _container">
+		<div class="services__container _container project1">
 			<div class="services__body">
 				<div class="services__column">
 					<div class="services__item item-service">
@@ -91,48 +128,22 @@
 						<div class="item-service__icon"><img src="img/services/01.svg" alt="Environmental Consulting">
 						</div>
 						<h3 class="item-service__title">Lorem, ipsum.</h3>
-						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ipsa, dolorum?
-						</div>
-					</div>
-				</div>
-				<div class="services__column">
-					<div class="services__item item-service">
-						<div class="item-service__icon"><img src="img/services/01.svg" alt="Environmental Consulting">
-						</div>
-						<h3 class="item-service__title">Lorem, ipsum.</h3>
-						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ipsa, dolorum?
-						</div>
-					</div>
-				</div>
-				<div class="services__column">
-					<div class="services__item item-service">
-						<div class="item-service__icon"><img src="img/services/02.svg" alt="Finance and consultancy">
-						</div>
-						<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
+						<div id="second-section"></div>
 						<div class="item-service__text">Lorem ipsum dolor sit amet consectetur
 							adipisicing elit.
-							Itaque, sunt?
+							Ipsa, dolorum?
 						</div>
+
 					</div>
 				</div>
-				<div class="services__column">
-					<div class="services__item item-service item-service_green">
-						<div class="item-service__icon"><img src="img/services/03.svg"
-								alt="Financial Services Consulting"></div>
-						<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
-						<div id="second-section" class="item-service__text">Lorem ipsum dolor, sit amet consectetur
-							adipisicing
-							elit.</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
-		<div></div>
+		</div>
+
 	</section>
 
-	<section class="page__practice practice">
+	<section class="page__practice practice parallax1">
 		<div class="practice__container _container">
 			<div class="practice__header header-block">
 				<h2 class="header-block__title">Despre ANPR</h2>
@@ -147,7 +158,7 @@
 							<a href="" class="item-practice__link">
 								<h4 class="item-practice__title"><a href="#membre"> Участники</a></h4>
 							</a>
-							<div class="item-practice__text">
+							<!-- <div class="item-practice__text">
 								<ol id="members-list">
 									<li> 1. “A. VIDEO CONTENT” SRL (TV Cinema 1)</li>
 									<li> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</li>
@@ -178,7 +189,7 @@
 									<li> 27. “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)</li>
 								</ol>
 
-							</div>
+							</div> -->
 						</div>
 						<a href="" class="item-practice__image _ibg">
 							<img src="./img/tmp_memers/участники ассоциации.jpg" alt="A single source of truth">
@@ -211,7 +222,9 @@
 						</a>
 					</article>
 				</div>
-				<div class="practice__column">
+				<div class="bcg1"></div>
+				<div class="practice__column parallax1">
+
 					<article class="practice__item item-practice">
 						<div class="item-practice__content">
 							<a href="" class="item-practice__link">
@@ -245,7 +258,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="documents">
+	<div class="documents _container">
 		<section class="Legislatia" id="three-section">
 			<div class="Legislatia__container _container">
 
@@ -646,134 +659,26 @@
 
 	<!-- FORM -->
 	<section class="form_style">
-		<form id="" enctype="multipart/form-data" method="POST" action="" novalidate="novalidate">
-			<div class="">
-				<div class="">
-					<div class="">
-						<label class="control-label" for="FORM2_FIELD_company">Наименование
-							организации:</label>
-						<input class="form-control" type="text" id="FORM2_FIELD_company" name="FIELDS[company]"
-							value="">
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="form-group">
-						<label class="control-label" for="FORM2_FIELD_TITLE">Контактное лицо<span
-								class="asterisk">*</span>:</label>
-						<input class="form-control" type="text" id="FORM2_FIELD_TITLE" name="FIELDS[TITLE]" value=""
-							required data-bv-message="Обязательное поле">
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="form-group">
-						<label class="control-label" for="FORM2_FIELD_PHONE">Телефон<span
-								class="asterisk">*</span>:</label>
-						<input class="form-control" type="tel" id="FORM2_FIELD_PHONE" name="FIELDS[PHONE]" value=""
-							required data-bv-message="Обязательное поле" data-inputmask-mask="+7 (999) 999-9999"
-							data-mask="+7 (999) 999-9999">
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="form-group">
-						<label class="control-label" for="FORM2_FIELD_EMAIL">Ваш E-mail<span
-								class="asterisk">*</span>:</label>
-						<input class="form-control" type="email" id="FORM2_FIELD_EMAIL" name="FIELDS[EMAIL]" value=""
-							required data-bv-message="Обязательное поле"
-							data-bv-emailaddress-message="E-mail введен некорректно">
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="form-group">
-						<label class="control-label" for="FORM2_FIELD_MESSAGE">Сообщение<span
-								class="asterisk">*</span>:</label>
-						<div>
-							<textarea class="form-control" id="FORM2_FIELD_MESSAGE" rows="5" name="FIELDS[MESSAGE]"
-								required data-bv-message="Обязательное поле"></textarea>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="form-group">
-						<label class="control-label" for="FORM2_FIELD_DOCS">Вложить документы:</label>
-						<div class="drag_n_drop-field">
-							<!--a href="javascript:void(0);" id="file-selectdialogswitcher-FORM2_FIELD_DOCS" class="file-selectdialog-switcher" onclick="BX.onCustomEvent(this.parentNode, 'BFileDLoadFormController');return false;"><span>Загрузить файлы</span></a-->
-							<div id="file-selectdialog-FORM2_FIELD_DOCS" class="file-selectdialog">
-								<table id="file-file-template" style='display:none;'>
-									<tr class="file-inline-file" id="file-doc">
-										<td class="files-name">
-											<span class="files-text">
-												<span class="f-wrap" data-role='name'>#name#</span>
-											</span>
-										</td>
-										<td class="files-size" data-role='size'>#size#</td>
-										<td class="files-storage">
-											<div class="files-storage-block">
-												<span class="files-placement">&nbsp;</span>
-											</div>
-										</td>
-									</tr>
-								</table>
-								<div id="file-image-template" style='display:none;'>
-									<span class="feed-add-photo-block">
-										<span class="feed-add-img-wrap">
-											<img width="90" height="90" border="0" data-role='image'>
-										</span>
-										<span class="feed-add-img-title" data-role='name'>#name#</span>
-										<span class="feed-add-post-del-but"></span>
-									</span>
-								</div>
-								<div class="file-extended">
-									<div class="file-placeholder">
-										<table class="files-list" cellspacing="0">
-											<tbody class="file-placeholder-tbody">
-											</tbody>
-										</table>
-									</div>
-									<div class="file-selector">
-										Перетащите один или несколько файлов в эту область<br />
-										<span class="file-uploader"><span class="file-but-text">или выберите
-												файл на
-												компьютере</span><input class="file-fileUploader "
-												id="file-fileUploader-FORM2_FIELD_DOCS" type="file" multiple='multiple'
-												size='1' /></span>
-										<div class="webform-field-upload-notice">Выберите файл с расширением
-											(doc, docx,
-											xls, xlsx, txt, rtf, pdf, png, jpeg, jpg, gif) и размером, не
-											превышающим 20 МБ.
-										</div>
-									</div>
-								</div>
-								<div class="file-simple" style='padding:0; margin:0;'>
-									<div class="file-placeholder">
-										<table class="files-list" cellspacing="0">
-											<tbody class="file-placeholder-tbody">
-												<tr style='display: none;'>
-													<td colspan='3'></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="file-selector"><span class="file-uploader"><span
-												class="file-uploader-left"></span><span class="file-but-text">Загрузить
-												файлы</span><span class="file-uploader-right"></span><input
-												class="file-fileUploader " id="file-fileUploader-FORM2_FIELD_DOCS"
-												type="file" size='1' /></span></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+		<form id="contact-form">
+			<label class="control-label" for="company">Наименование
+				организации:</label>
+			<input class="form-control" type="text" id="company" name="FIELDS[company]" value="">
+			<label class="control-label" for="title">Контактное лицо*:</label>
+			<input class="form-control" type="text" id="title" name="FIELDS[TITLE]" value="" required
+				data-bv-message="Обязательное поле">
+			<label class="control-label" for="phone">Телефон*:</label>
+			<input class="form-control" type="tel" id="phone" name="FIELDS[PHONE]" value="" required
+				data-bv-message="Обязательное поле">
+			<label class="control-label" for="email">Ваш E-mail*:</label>
+			<input class="form-control" type="email" id="email" name="FIELDS[EMAIL]" value="" required
+				data-bv-message="Обязательное поле" data-bv-emailaddress-message="E-mail введен некорректно">
+			<label class="control-label" for="file">ВЛОЖИТЬ ДОКУМЕНТЫ:</label>
+			<input type="file">
+			<label class="control-label" for="message">Сообщение*:</label>
+			<textarea class="form-control" id="message" rows="5" name="FIELDS[MESSAGE]" required
+				data-bv-message="Обязательное поле"></textarea>
 
-				<div class="col-xs-12">
-					<p class="warning-buy"><small>Нажимая на кнопку "Отправить", вы даете согласие на
-							обработку
-							<a target="_blank" href="/ob-assotsiatsii/privacy/">персональных
-								данных</a></small>
-					</p>
-					<button type="submit" class="btn btn-primary pull-right submit-button"
-						data-default="Отправить">Отправить</button>
-				</div>
-			</div>
+			<input id="submit" type="submit">
 		</form>
 	</section>
 	</main>
@@ -869,8 +774,8 @@
 		</div>
 	</footer> -->
 		</div>
-		<script src="./js/jquery.js"></script>
-		<script src="js/script.js"></script>
+	</footer>
+	<script src="./js/jquery.js"></script>
 </body>
 
 </html>
