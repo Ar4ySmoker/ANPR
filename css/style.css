@@ -111,7 +111,7 @@ body {
   color: rgba(148, 163, 184, 1);
   font-weight: 500;
   font-size: 14px;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 .heading {
   /* position: absolute; */
