@@ -1,6 +1,5 @@
 $(document).ready(() => {
   $("#burger__menu").click(function () {
-    console.log("chow");
     $("#slider").toggleClass("show");
   });
   $("#close__burger").click(function () {
@@ -22,7 +21,7 @@ $(document).ready(() => {
 
     return false;
   });
-  $(".menu__list-slide a").on("click", function () {
+  $(".spjnz a").on("click", function () {
     let href = $(this).attr("href");
 
     $("html, body").animate(

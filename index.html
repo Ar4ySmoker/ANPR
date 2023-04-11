@@ -13,37 +13,42 @@
 	<script src="./js/paralax.js" defer></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.11/dist/jquery.flip.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.nineslider.js" defer></script>
 	<script src="./js/email.js" defer></script>
 	<script src="./js/script.js" defer></script>
 </head>
 
 <body>
 	<div class="wrapper" id="first-section">
+		<div class="supheader">
+
+			<ul class="menu__list spjnz">
+
+				<li class="menu__item">
+					<a href="#second-section" class="menu__link">Despre <span>ANPR</span></a>
+				</li>
+				<li class="menu__item">
+					<a href="#three-section" class="menu__link">Legislația</a>
+				</li>
+				<li class="menu__item">
+					<a href="#fourth-section" class="menu__link">Activitate</a>
+				</li>
+				<li class="menu__item">
+					<a href="#contacte" class="menu__link">Contracte</a>
+				</li>
+			</ul>
+			<div class="supheader__wrapper">
+				<h1 style="text-align: left;" class=" heading">Lorem ipsum dolor,<br> sit amet consectetur<br>
+					adipisicing elit.</h1>
+			</div>
+		</div>
 		<header class="header">
 			<div class="header__container _container">
 				<!-- На других страницах это ссылка будет вести на страницу index.html -->
 				<a href="." class="header__logo">
-					ASPR
+					ANPR
 				</a>
-				<nav class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="#first-section" class="menu__link">Prima pagina</a>
-						</li>
-						<li class="menu__item">
-							<a href="#second-section" class="menu__link">Despre ANPR</a>
-						</li>
-						<li class="menu__item">
-							<a href="#three-section" class="menu__link">Legislația</a>
-						</li>
-						<li class="menu__item">
-							<a href="#fourth-section" class="menu__link">Activitate</a>
-						</li>
-						<li class="menu__item">
-							<a href="#contacte" class="menu__link">Contracte</a>
-						</li>
-					</ul>
-				</nav>
+
 				<button id="burger__menu">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5 7H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
@@ -95,53 +100,61 @@
 					</div>
 				</div>
 				<div class="main-block__image _ibg">
-					<img src="img/Slider/close-up-sound-engineer-studio.jpg" alt="cover">
+					<ul id="demo1">
+						<li>
+							<img src="img/Slider/close-up-sound-engineer-studio.jpg" alt="cover">
+						</li>
+						<li>
+							<img src="img/Slider/digital-mixer-recording-studio.jpg" alt="test">
+						</li>
+					</ul>
 				</div>
 			</div>
 			<section class="page__services services" id="second-section">
-				<a href="#consiliul">
-					<div class="services__container _container project1">
-						<div class="services__body">
-							<div class="services__column">
-								<div class="services__item item-service">
-									<div class="item-service__icon"><img src="img/tmp_memers/Административный Совет.jpg"
-											alt="Environmental Consulting" href="#consiliul">
-									</div>
-									<h3 class="item-service__title"> Consiliul de Administrare ANPR</h3>
-									<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing
-										elit.
-										Ipsa, dolorum?
-									</div>
+				<div class="services__container _container">
+					<div class="services__body">
+						<div class="services__column">
+							<div class="services__item item-service">
+								<div class="item-service__icon"><img src="img/tmp_memers/Административный Совет.jpg"
+										alt="Environmental Consulting"></div>
+								<h3 class="item-service__title">Lorem, ipsum.</h3>
+								<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsa, dolorum?
 								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-				<a href="#Deținătorii-de-licențe">
-					<div class="services__column">
-						<div class="services__item item-service">
-							<div class="item-service__icon">
-								<img src="img/tmp_memers/Обладатели лицензий.jpg" alt="Environmental Consulting">
+						<div class="services__column">
+							<div class="services__item item-service">
+								<div class="item-service__icon"><img src="img/tmp_memers/Обладатели лицензий.jpg"
+										alt="Finance and consultancy"></div>
+								<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
+								<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Itaque, sunt?
+								</div>
 							</div>
-							<h3 class="item-service__title">Deținătorii de licențe</h3>
-							<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Ipsa, dolorum?
+						</div>
+						<div class="services__column">
+							<div class="services__item item-service">
+								<div class="item-service__icon"><img src="img/tmp_memers/участники ассоциации.jpg"
+										alt="Financial Services Consulting">
+								</div>
+								<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
+								<div class="item-service__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.</div>
+							</div>
+						</div>
+						<div class="services__column table-card">
+							<div class="services__item item-service">
+								<div class="item-service__icon"><img src="img/tmp_memers/участники ассоциации.jpg"
+										alt="Financial Services Consulting">
+								</div>
+								<h3 class="item-service__title">Lorem, ipsum dolor.</h3>
+								<div class="item-service__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.</div>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="#doc">
-					<div class="services__column">
-						<div class="services__item item-service">
-							<div class="item-service__icon"><img src="img/tmp_memers/Общие Собрания.jpg"
-									alt="Environmental Consulting">
-							</div>
-							<h3 class="item-service__title">Documentatia organizatiei</h3>
-							<div class="item-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Ipsa, dolorum?
-							</div>
-							<div>
-				</a>
+				</div>
 			</section>
 			<div class="documents _container">
 				<section class="Legislatia" id="three-section">
@@ -154,11 +167,9 @@
 									<h2 class="Legislatia__title">Legislatia</h2>
 
 								</div>
-								<div class="Legislatia__items">
-									<div class="Legislatia__item item-whoweare">
-										<!-- <div class="item-Legislatia__icon">
-									<img src="img/whoweare/icons/01.svg" alt="">
-								</div> -->
+								<ul class="Legislatia__items">
+									<li class="Legislatia__item item-whoweare">
+
 										<div class="item-Legislatia__body">
 											<div class="item-Legislatia__title">
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -178,17 +189,17 @@
 														stroke-linecap="round" />
 												</svg>
 												<a href="./pdf/LEGE Nr. 976_ro.pdf" target="_blank">
-													Lege Nr. 976
-													din 11-05-2000
-													Patronatelor</a>
+													<p class="ellepsis">
+														Lege Nr. 976
+														din 11-05-2000
+														Patronatelor</p>
+												</a>
 											</div>
 
 										</div>
-									</div>
-									<div class="Legislatia__item item-whoweare">
-										<!-- <div class="item-Legislatia__icon">
-							<img src="img/whoweare/icons/02.svg" alt="">
-						</div> -->
+									</li>
+									<li class="Legislatia__item item-whoweare">
+
 										<div class="item-Legislatia__body">
 											<div class="item-Legislatia__title">
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -207,17 +218,15 @@
 													<path d="M21 21L19.5 19.5" stroke="#33363F" stroke-width="2"
 														stroke-linecap="round" />
 												</svg>
-												<a href="./pdf/LEGE Nr. 62_ro.pdf" target="_blank">Lege
-													Nr. 62 din
-													17-03-2022 cu privire la publicitate
+												<a href="./pdf/LEGE Nr. 62_ro.pdf" target="_blank">
+													<p class="ellepsis">Lege Nr. 62 din
+														17-03-2022 cu privire la publicitate</p>
 											</div></a>
 
 										</div>
-									</div>
-									<div class="Legislatia__item item-whoweare">
-										<!-- <div class="item-Legislatia__icon">
-													<img src="img/whoweare/icons/02.svg" alt="">
-												</div> -->
+									</li>
+									<li class="Legislatia__item item-whoweare">
+
 										<div class="item-Legislatia__body">
 											<div class="item-Legislatia__title">
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -236,17 +245,16 @@
 													<path d="M21 21L19.5 19.5" stroke="#33363F" stroke-width="2"
 														stroke-linecap="round" />
 												</svg>
-												<a href="./pdf/LEGE Nr. 230_ro.pdf" target="_blank">Lege
-													Nr. 230 din 28-07-2022 privind dreptul de autor
-													și drepturile conex</a>
+												<a href="./pdf/LEGE Nr. 230_ro.pdf" target="_blank">
+													Lege Nr. 230 din 28-07-2022 privind dreptul de autor
+
+												</a>
 											</div>
 
 										</div>
-									</div>
-									<div class="Legislatia__item item-whoweare">
-										<!-- <div class="item-Legislatia__icon">
-													<img src="img/whoweare/icons/02.svg" alt="">
-												</div> -->
+									</li>
+									<li class="Legislatia__item item-whoweare">
+
 										<div class="item-Legislatia__body">
 											<div class="item-Legislatia__title">
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -265,405 +273,402 @@
 													<path d="M21 21L19.5 19.5" stroke="#33363F" stroke-width="2"
 														stroke-linecap="round" />
 												</svg>
-												<a href="./pdf/COD Nr. 174_ro.pdf" target="_blank">Codul
-													Serviciilor Media Audiovizuale Nr. 174</a>
+												<a href="./pdf/COD Nr. 174_ro.pdf" target="_blank">
+													<p class="ellepsis">Codul Serviciilor Media Audiovizuale Nr. 174</p>
+												</a>
 											</div>
 
 										</div>
-									</div>
-								</div>
+									</li>
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="activitate" id="fourth-section">
-					<div class="activitate__container _container">
+			</div>
+			</section>
+			<section class="activitate" id="fourth-section">
+				<div class="activitate__container _container">
 
-						<div class="activitate__body">
+					<div class="activitate__body">
 
-							<div class="activitate__content">
-								<div class="activitate__top">
-									<h2 class="activitate__title"> Activitate</h2>
+						<div class="activitate__content">
+							<div class="activitate__top">
+								<h2 class="activitate__title"> Activitate</h2>
 
-								</div>
-								<div class="activitate__items">
-									<div class="activitate__item item-whoweare">
-										<!-- <div class="item-Legislatia__icon">
+							</div>
+							<div class="activitate__items">
+								<div class="activitate__item item-whoweare">
+									<!-- <div class="item-Legislatia__icon">
 										<img src="img/whoweare/icons/01.svg" alt="">
 									</div> -->
-										<div class="item-activitate__body">
-											<div class="item-Legislatia__title">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-													xmlns="http://www.w3.org/2000/svg">
-													<path d="M9 7L13 7" stroke="#33363F" stroke-width="2"
-														stroke-linecap="round" />
-													<path d="M9 15L12 15" stroke="#33363F" stroke-width="2"
-														stroke-linecap="round" />
-													<path d="M9 11L15 11" stroke="#33363F" stroke-width="2"
-														stroke-linecap="round" />
-													<path
-														d="M19 11V9C19 6.17157 19 4.75736 18.1213 3.87868C17.2426 3 15.8284 3 13 3H11C8.17157 3 6.75736 3 5.87868 3.87868C5 4.75736 5 6.17157 5 9V15C5 17.8284 5 19.2426 5.87868 20.1213C6.75736 21 8.17157 21 11 21H12"
-														stroke="#33363F" stroke-width="2" />
-													<circle cx="17.5" cy="17.5" r="2.5" stroke="#33363F"
-														stroke-width="2" />
-													<path d="M21 21L19.5 19.5" stroke="#33363F" stroke-width="2"
-														stroke-linecap="round" />
-												</svg>
-												<a href="./pdf/Consiliul Audiovizualului RM din 30-03-2023.pdf"
-													target="_blank">
-													Solicitare către Consiliul Audiovizualului RM din 30-03-2023</a>
-											</div>
-
+									<div class="item-activitate__body">
+										<div class="item-Legislatia__title">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 7L13 7" stroke="#33363F" stroke-width="2"
+													stroke-linecap="round" />
+												<path d="M9 15L12 15" stroke="#33363F" stroke-width="2"
+													stroke-linecap="round" />
+												<path d="M9 11L15 11" stroke="#33363F" stroke-width="2"
+													stroke-linecap="round" />
+												<path
+													d="M19 11V9C19 6.17157 19 4.75736 18.1213 3.87868C17.2426 3 15.8284 3 13 3H11C8.17157 3 6.75736 3 5.87868 3.87868C5 4.75736 5 6.17157 5 9V15C5 17.8284 5 19.2426 5.87868 20.1213C6.75736 21 8.17157 21 11 21H12"
+													stroke="#33363F" stroke-width="2" />
+												<circle cx="17.5" cy="17.5" r="2.5" stroke="#33363F" stroke-width="2" />
+												<path d="M21 21L19.5 19.5" stroke="#33363F" stroke-width="2"
+													stroke-linecap="round" />
+											</svg>
+											<a href="./pdf/Consiliul Audiovizualului RM din 30-03-2023.pdf"
+												target="_blank">
+												Solicitare către Consiliul Audiovizualului RM din 30-03-2023</a>
 										</div>
+
 									</div>
+								</div>
 
-				</section>
-				<div id="consiliul"></div>
-			</div>
+			</section>
+			<div id="consiliul"></div>
+	</div>
 
-			<section class="page__advantages advantages">
-				<div class="page__clients clients">
-					<div class="clients__container _container">
-						<div class="clients__header header-block">
-							<h2 class="header-block__title">Consiliul de Administrare ANPR</h2>
-							<div class="header-block__sub-title_m">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit
-								amet.
-							</div>
-						</div>
-						<div class="clients__item1" id="Administrator">
-							<img src="img/license_radio/19_новое.png" alt="clients">
-						</div>
-						<div class="clients__items1">
-
-							<div class="clients__item1">
-								<img src="img/license_radio/не от заказчика/Logo_N4.png" alt="clients">
-							</div>
-							<div class="clients__item1">
-								<img src="img/license_radio/24_Jurnal.png" alt="clients">
-							</div>
-							<div class="clients__item1">
-								<img src="./img/license_radio/16_радио21.png" alt="clients">
-							</div>
-							<div class="clients__item1">
-								<img src="/img/license_radio/18_retro.png" alt="">
-							</div>
-							<div class="clients__item1">
-								<img src="img/license_radio/09_aquarelle.png" alt="clients">
-							</div>
-							<div class="clients__item1">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-									width="115" height="55" viewBox="0 0 115 55">
-									<defs>
-										<path id="371ua"
-											d="M1083.13 69.85l-5.75-9.24h-3.43v9.24H1067V41.49h10.8c7.27 0 11.66 3.73 11.66 9.56 0 3.85-1.9 6.77-5.3 8.3l6.66 10.5h-7.7zm-9.18-15.6h4.8c2.48 0 3.47-1.66 3.47-3.2 0-1.54-1-3.2-3.47-3.2h-4.8z" />
-										<path id="371ub"
-											d="M1120.91 41.49v15.8c0 8.52-5.3 13.19-12.85 13.19-7.59 0-12.85-4.67-12.85-13.2V41.5h6.85v16.04c0 4.06 2.25 6.58 6 6.58 3.76 0 6-2.52 6-6.58V41.49h6.85" />
-										<path id="371uc"
-											d="M1154.45 27a27.34 27.34 0 0 0-27.27 27.41 27.34 27.34 0 0 0 27.27 27.42 27.34 27.34 0 0 0 27.27-27.42A27.34 27.34 0 0 0 1154.45 27zm8.9 38.25h-3.78l-6.47-14.75h-5.69v14.75h-4.54V50.5h-5.67v-4.26h19.13l4.87 11.62.27.84.27-.84 4.86-11.62h5.1z" />
-									</defs>
-									<g>
-										<g transform="translate(-1067 -27)">
-											<use fill="#000000" xlink:href="#371ua" />
-										</g>
-										<g transform="translate(-1067 -27)">
-											<use fill="#00000" xlink:href="#371ub" />
-										</g>
-										<g transform="translate(-1067 -27)">
-											<use fill="#00000" xlink:href="#371uc" />
-										</g>
-									</g>
-								</svg>
-							</div>
-							<div class="clients__item1">
-								<img src="img/license_radio/07_megapolis-fm.png" alt="clients">
-							</div>
-							<div class="clients__item1">
-								<img src="img/license_radio/06_rlive_tv.png" alt="clients">
-							</div>
-
-
-
-						</div>
+	<section class="page__advantages advantages">
+		<div class="page__clients clients">
+			<div class="clients__container _container">
+				<div class="clients__header header-block">
+					<h2 class="header-block__title">Consiliul de Administrare ANPR</h2>
+					<div class="header-block__sub-title_m">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit
+						amet.
 					</div>
 				</div>
-			</section>
+				<div class="clients__item1" id="Administrator">
+					<img src="img/license_radio/19_новое.png" alt="clients">
+				</div>
+				<div class="clients__items1">
 
-
-			<div class="page__clients clients" id="Deținătorii-de-licențe">
-				<div class="clients__container _container">
-					<div class="clients__header header-block">
-						<h2 class="header-block__title">Membre</h2>
-						<div class="header-block__sub-title_m">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
-						</div>
+					<div class="clients__item1">
+						<img src="img/license_radio/не от заказчика/Logo_N4.png" alt="clients">
 					</div>
-					<div class="clients__items">
-
-						<div class="clients__item card ">
-							<div class="front">
-								<img src="img/clients/01.png" alt="clients">
-							</div>
-							<div class="back">
-								<p> 1. “A. VIDEO CONTENT” SRL (TV Cinema 1)</p>
-							</div>
-						</div>
-
-						<div class="clients__item card ">
-							<div class="front">
-								<img src="img/clients/02.png" alt="clients">
-							</div>
-							<div class="back">
-								<p> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</p>
-							</div>
-						</div>
-						<div class="clients__item card">
-							<div class="front">
-								<img src="./img/license_radio/03_авторадио.png" alt="clients">
-							</div>
-							<div class="back">
-								<p> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</p>
-							</div>
-						</div>
-						<div class="clients__item">
-							<img src="./img/tmp_memers/europe.svg" alt="">
-						</div>
-						<div class="clients__item">5. “BRAVO TV” SRL (Bravo TV)
-							<img src="img/clients/05.png" alt="clients">
-						</div>
-
-
-
-						<div class="clients__item card">
-							<div class="front"><img src="img/license_radio/10_dance.png" alt="clients"></div>
-						</div>
-						<div class="clients__item">
-							<img src="img/license_radio/11_Love.png" alt="clients">
-						</div>
-						<div class="clients__item" class="">12. “MEDIA PRODUCTION TV” SRL (REN TV)
-							<img src="img/clients/06.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/license_radio/13_zum2.png" alt="clients">
-						</div>
-						<div class="clients__item">14. “NOROC MEDIA” SRL (Noroc TV, Noroc FM)
-							<img src="img/clients/02.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/license_radio/15_zum1.png" alt="clients">
-						</div>
-
-						<div class="clients__item">17. “RADIO HIT” SRL (Hit FM)
-							<img src="img/clients/05.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/license_radio/20_rvs.png" alt="clients">
-						</div>
-						<div class="clients__item">21. “RADIO TOP” SRL (Radio Rock's)
-							<img src="img/clients/03.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/license_radio/22_radiomd.png" alt="clients">
-						</div>
-						<div class="clients__item">23. “RECORD TEAM” SRL (Radio Record)
-							<img src="img/clients/05.png" alt="clients">
-						</div>
-
-						<div class="clients__item">25. “SELECTCANAL-TV” SRL (TV N4)
-							<img src="img/clients/02.png" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/license_radio/26_Zona M.png" alt="clients">
-						</div>
-						<div class="clients__item">27. “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)
-							<img src="img/clients/04.png" alt="clients">
-						</div>
-						<div class="clients__item">more...
-							<img src="img/clients/04.png" alt="clients">
-						</div>
+					<div class="clients__item1">
+						<img src="img/license_radio/24_Jurnal.png" alt="clients">
 					</div>
+					<div class="clients__item1">
+						<img src="./img/license_radio/16_радио21.png" alt="clients">
+					</div>
+					<div class="clients__item1">
+						<img src="/img/license_radio/18_retro.png" alt="">
+					</div>
+					<div class="clients__item1">
+						<img src="img/license_radio/09_aquarelle.png" alt="clients">
+					</div>
+					<div class="clients__item1">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115"
+							height="55" viewBox="0 0 115 55">
+							<defs>
+								<path id="371ua"
+									d="M1083.13 69.85l-5.75-9.24h-3.43v9.24H1067V41.49h10.8c7.27 0 11.66 3.73 11.66 9.56 0 3.85-1.9 6.77-5.3 8.3l6.66 10.5h-7.7zm-9.18-15.6h4.8c2.48 0 3.47-1.66 3.47-3.2 0-1.54-1-3.2-3.47-3.2h-4.8z" />
+								<path id="371ub"
+									d="M1120.91 41.49v15.8c0 8.52-5.3 13.19-12.85 13.19-7.59 0-12.85-4.67-12.85-13.2V41.5h6.85v16.04c0 4.06 2.25 6.58 6 6.58 3.76 0 6-2.52 6-6.58V41.49h6.85" />
+								<path id="371uc"
+									d="M1154.45 27a27.34 27.34 0 0 0-27.27 27.41 27.34 27.34 0 0 0 27.27 27.42 27.34 27.34 0 0 0 27.27-27.42A27.34 27.34 0 0 0 1154.45 27zm8.9 38.25h-3.78l-6.47-14.75h-5.69v14.75h-4.54V50.5h-5.67v-4.26h19.13l4.87 11.62.27.84.27-.84 4.86-11.62h5.1z" />
+							</defs>
+							<g>
+								<g transform="translate(-1067 -27)">
+									<use fill="#000000" xlink:href="#371ua" />
+								</g>
+								<g transform="translate(-1067 -27)">
+									<use fill="#00000" xlink:href="#371ub" />
+								</g>
+								<g transform="translate(-1067 -27)">
+									<use fill="#00000" xlink:href="#371uc" />
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="clients__item1">
+						<img src="img/license_radio/07_megapolis-fm.png" alt="clients">
+					</div>
+					<div class="clients__item1">
+						<img src="img/license_radio/06_rlive_tv.png" alt="clients">
+					</div>
+
+
+
 				</div>
 			</div>
-			<section class="page__subscribe subscribe">
-				<div class="subscribe__container _container">
-					<div class="subscribe__body">
-						<h4 class="subscribe__title">Lorem ipsum dolor sit amet.</h4>
-						<form action="#" class="subscribe__form">
-							<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
-								class="subscribe__input">
-							<button type="submit" class="subscribe__button">Subscribe</button>
-						</form>
+		</div>
+	</section>
+
+
+	<div class="page__clients clients" id="Deținătorii-de-licențe">
+		<div class="clients__container _container">
+			<div class="clients__header header-block">
+				<h2 class="header-block__title">Membre</h2>
+				<div class="header-block__sub-title_m">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
+				</div>
+			</div>
+			<div class="clients__items">
+
+				<div class="clients__item card ">
+					<div class="front">
+						<img src="img/clients/01.png" alt="clients">
+					</div>
+					<div class="back">
+						<p> 1. “A. VIDEO CONTENT” SRL (TV Cinema 1)</p>
 					</div>
 				</div>
-			</section>
-			<section class="page__advantages advantages" id="doc">
-				<div class="advantages__container _container">
-					<div class="advantages__header header-block">
-						<h2 class="header-block__title">Documentatia organizatiei</h2>
-						<!-- <div class="header-block__sub-title">
+
+				<div class="clients__item card ">
+					<div class="front">
+						<img src="img/clients/02.png" alt="clients">
+					</div>
+					<div class="back">
+						<p> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</p>
+					</div>
+				</div>
+				<div class="clients__item card">
+					<div class="front">
+						<img src="./img/license_radio/03_авторадио.png" alt="clients">
+					</div>
+					<div class="back">
+						<p> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</p>
+					</div>
+				</div>
+				<div class="clients__item">
+					<img src="./img/tmp_memers/europe.svg" alt="">
+				</div>
+				<div class="clients__item">5. “BRAVO TV” SRL (Bravo TV)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+
+
+
+				<div class="clients__item card">
+					<div class="front"><img src="img/license_radio/10_dance.png" alt="clients"></div>
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/11_Love.png" alt="clients">
+				</div>
+				<div class="clients__item" class="">12. “MEDIA PRODUCTION TV” SRL (REN TV)
+					<img src="img/clients/06.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/13_zum2.png" alt="clients">
+				</div>
+				<div class="clients__item">14. “NOROC MEDIA” SRL (Noroc TV, Noroc FM)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/15_zum1.png" alt="clients">
+				</div>
+
+				<div class="clients__item">17. “RADIO HIT” SRL (Hit FM)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/20_rvs.png" alt="clients">
+				</div>
+				<div class="clients__item">21. “RADIO TOP” SRL (Radio Rock's)
+					<img src="img/clients/03.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/22_radiomd.png" alt="clients">
+				</div>
+				<div class="clients__item">23. “RECORD TEAM” SRL (Radio Record)
+					<img src="img/clients/05.png" alt="clients">
+				</div>
+
+				<div class="clients__item">25. “SELECTCANAL-TV” SRL (TV N4)
+					<img src="img/clients/02.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/26_Zona M.png" alt="clients">
+				</div>
+				<div class="clients__item">27. “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+				<div class="clients__item">more...
+					<img src="img/clients/04.png" alt="clients">
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="page__subscribe subscribe">
+		<div class="subscribe__container _container">
+			<div class="subscribe__body">
+				<h4 class="subscribe__title">Lorem ipsum dolor sit amet.</h4>
+				<form action="#" class="subscribe__form">
+					<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
+						class="subscribe__input">
+					<button type="submit" class="subscribe__button">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="page__advantages advantages" id="doc">
+		<div class="advantages__container _container">
+			<div class="advantages__header header-block">
+				<h2 class="header-block__title">Documentatia organizatiei</h2>
+				<!-- <div class="header-block__sub-title">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
 				</div> -->
-					</div>
-					<div class="advantages__body">
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="./img/tmp_memers/charter.svg" alt="">
-								</div>
-								<div class="advantages__value">Устав</div>
-								<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">
-									Ознакомится с
-									уставом ANPR</div>
-							</div>
+			</div>
+			<div class="advantages__body">
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="./img/tmp_memers/charter.svg" alt="">
 						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/tmp_memers/info.svg" alt="Financial Services">
-								</div>
-								<div class="advantages__value">Об Ассоциации</div>
-								<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg"
-										alt="">Ознакомится
-									подробнее</div>
-							</div>
-						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img//tmp_memers/join.svg" alt="Environmental">
-								</div>
-								<div class="advantages__value">Вступить в Ассоциацию</div>
-								<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">Условия
-									вступления
-								</div>
-								<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">Образец
-									заявления
-								</div>
-							</div>
-						</div>
-
+						<div class="advantages__value">Устав</div>
+						<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">
+							Ознакомится с
+							уставом ANPR</div>
 					</div>
 				</div>
-			</section>
-			<section class="page__getintouch getintouch" id="contacte">
-				<div class="getintouch__container _container">
-					<div class="getintouch__header header-block">
-						<h2 class="header-block__title">Contacte</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Vitae, eum.
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img/tmp_memers/info.svg" alt="Financial Services">
+						</div>
+						<div class="advantages__value">Об Ассоциации</div>
+						<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">Ознакомится
+							подробнее</div>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="img//tmp_memers/join.svg" alt="Environmental">
+						</div>
+						<div class="advantages__value">Вступить в Ассоциацию</div>
+						<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">Условия
+							вступления
+						</div>
+						<div class="advantages__text"><img src="./img/tmp_memers/file_svg.svg" alt="">Образец
+							заявления
 						</div>
 					</div>
-					<div class="getintouch__items">
-						<div class="getintouch__item item-getintouch">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/01.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
+				</div>
 
-								<a href="tel:+37322739378" class="item-getintouch__email">+373 (22) 739378</a>
-							</div>
+			</div>
+		</div>
+	</section>
+	<section class="page__getintouch getintouch" id="contacte">
+		<div class="getintouch__container _container">
+			<div class="getintouch__header header-block">
+				<h2 class="header-block__title">Contacte</h2>
+				<div class="header-block__sub-title">
+					Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+					Vitae, eum.
+				</div>
+			</div>
+			<div class="getintouch__items">
+				<div class="getintouch__item item-getintouch">
+					<div class="item-getintouch__icon">
+						<img src="img/getintouch/01.svg" alt="getintouch">
+					</div>
+					<div class="item-getintouch__emails">
 
-							<a href="tel:+37322739378" class="item-getintouch__button">Apel</a>
-						</div>
-						<div class="getintouch__item item-getintouch item-getintouch_active">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/02.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
-								<a href="https://goo.gl/maps/DkCVGzb27YmqUvnu9" target="_blank"
-									class="item-getintouch__email">MD-2028,<br>
-									Кишинев,<br>
-									шоссе Хынчешть 59/1
-								</a>
+						<a href="tel:+37322739378" class="item-getintouch__email">+373 (22) 739378</a>
+					</div>
 
-							</div>
+					<a href="tel:+37322739378" class="item-getintouch__button">Apel</a>
+				</div>
+				<div class="getintouch__item item-getintouch item-getintouch_active">
+					<div class="item-getintouch__icon">
+						<img src="img/getintouch/02.svg" alt="getintouch">
+					</div>
+					<div class="item-getintouch__emails">
+						<a href="https://goo.gl/maps/DkCVGzb27YmqUvnu9" target="_blank"
+							class="item-getintouch__email">MD-2028,<br>
+							Кишинев,<br>
+							шоссе Хынчешть 59/1
+						</a>
 
-							<a href="https://goo.gl/maps/DkCVGzb27YmqUvnu9" target="_blank"
-								class="item-getintouch__button">Spectacol
+					</div>
+
+					<a href="https://goo.gl/maps/DkCVGzb27YmqUvnu9" target="_blank"
+						class="item-getintouch__button">Spectacol
+					</a>
+				</div>
+				<div class="getintouch__item item-getintouch">
+					<div class="item-getintouch__icon">
+						<img src="img/getintouch/03.svg" alt="getintouch">
+					</div>
+					<div class="item-getintouch__emails" id="form">
+
+						<a href="mailto:asociatia.patronala.anpr@gmail.com"
+							class="item-getintouch__email">asociatia.patronala.anpr@gmail.com</a>
+					</div>
+
+					<a href="mailto:asociatia.patronala.anpr@gmail.com" class="item-getintouch__button">scrie</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FORM -->
+	<section class="form_style">
+		<form id="contact-form">
+			<label class="control-label" for="company">Наименование
+				организации:</label>
+			<input class="form-control" type="text" id="company" name="FIELDS[company]" value="">
+			<label class="control-label" for="title">Контактное лицо*:</label>
+			<input class="form-control" type="text" id="title" name="FIELDS[TITLE]" value="" required
+				data-bv-message="Обязательное поле">
+			<label class="control-label" for="phone">Телефон*:</label>
+			<input class="form-control" type="tel" id="phone" name="FIELDS[PHONE]" value="" required
+				data-bv-message="Обязательное поле">
+			<label class="control-label" for="email">Ваш E-mail*:</label>
+			<input class="form-control" type="email" id="email" name="FIELDS[EMAIL]" value="" required
+				data-bv-message="Обязательное поле" data-bv-emailaddress-message="E-mail введен некорректно">
+			<label class="control-label" for="file">ВЛОЖИТЬ ДОКУМЕНТЫ:</label>
+			<input type="file">
+			<label class="control-label" for="message">Сообщение*:</label>
+			<textarea class="form-control" id="message" rows="5" name="FIELDS[MESSAGE]" required
+				data-bv-message="Обязательное поле"></textarea>
+
+			<input id="submit" type="submit">
+		</form>
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="footer__main _container">
+				<div class="footer__row">
+
+					<div class="footer__column ">
+						<div class="footer__label ">Resources</div>
+						<nav class="footer__menu menu-footer ">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="./pages/Despre-ANPR.html"
+										class="menu-footer__link">Despre ANPR-pdf</a>
+								</li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Обладатели
+										лицензий</a></li>
+								<li class="menu-footer__item"><a href=""
+										class="menu-footer__link">Компании-наблюдатели</a>
+								</li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Устав</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div class="footer__label">Get In Touch</div>
+						<div class="footer__contacts contacts-footer">
+							<a href="tel:+37322739378" class="contacts-footer__item contacts-footer__item_phone">+373
+								(22) 739378</a>
+							<a href="" class="contacts-footer__item contacts-footer__item_map">MD-2028, Кишинев,
+								шоссе Хынчешть 59/1
 							</a>
-						</div>
-						<div class="getintouch__item item-getintouch">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/03.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails" id="form">
-
-								<a href="mailto:asociatia.patronala.anpr@gmail.com"
-									class="item-getintouch__email">asociatia.patronala.anpr@gmail.com</a>
-							</div>
-
-							<a href="mailto:asociatia.patronala.anpr@gmail.com"
-								class="item-getintouch__button">scrie</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<!-- FORM -->
-			<section class="form_style">
-				<form id="contact-form">
-					<label class="control-label" for="company">Наименование
-						организации:</label>
-					<input class="form-control" type="text" id="company" name="FIELDS[company]" value="">
-					<label class="control-label" for="title">Контактное лицо*:</label>
-					<input class="form-control" type="text" id="title" name="FIELDS[TITLE]" value="" required
-						data-bv-message="Обязательное поле">
-					<label class="control-label" for="phone">Телефон*:</label>
-					<input class="form-control" type="tel" id="phone" name="FIELDS[PHONE]" value="" required
-						data-bv-message="Обязательное поле">
-					<label class="control-label" for="email">Ваш E-mail*:</label>
-					<input class="form-control" type="email" id="email" name="FIELDS[EMAIL]" value="" required
-						data-bv-message="Обязательное поле" data-bv-emailaddress-message="E-mail введен некорректно">
-					<label class="control-label" for="file">ВЛОЖИТЬ ДОКУМЕНТЫ:</label>
-					<input type="file">
-					<label class="control-label" for="message">Сообщение*:</label>
-					<textarea class="form-control" id="message" rows="5" name="FIELDS[MESSAGE]" required
-						data-bv-message="Обязательное поле"></textarea>
-
-					<input id="submit" type="submit">
-				</form>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__top">
-				<div class="footer__main _container">
-					<div class="footer__row">
-
-						<div class="footer__column ">
-							<div class="footer__label ">Resources</div>
-							<nav class="footer__menu menu-footer ">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="./pages/Despre-ANPR.html"
-											class="menu-footer__link">Despre ANPR-pdf</a>
-									</li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Обладатели
-											лицензий</a></li>
-									<li class="menu-footer__item"><a href=""
-											class="menu-footer__link">Компании-наблюдатели</a>
-									</li>
-									<li class="menu-footer__item"><a href="" class="menu-footer__link">Устав</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Get In Touch</div>
-							<div class="footer__contacts contacts-footer">
-								<a href="tel:+37322739378"
-									class="contacts-footer__item contacts-footer__item_phone">+373
-									(22) 739378</a>
-								<a href="" class="contacts-footer__item contacts-footer__item_map">MD-2028, Кишинев,
-									шоссе Хынчешть 59/1
-								</a>
-								<a href="mailto:debra.holt@example.com"
-									class="contacts-footer__item contacts-footer__item_email">asociatia.patronala.anpr@gmail.com</a>
-							</div>
+							<a href="mailto:debra.holt@example.com"
+								class="contacts-footer__item contacts-footer__item_email">asociatia.patronala.anpr@gmail.com</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="footer__bottom">
+		</div>
+		<!-- <div class="footer__bottom">
 			<div class="footer__container _container">
 				<div class="footer__copy">Made With Love By Figmaland All Right Reserved </div>
 				<div class="footer__social social">
@@ -683,8 +688,17 @@
 			</div>
 		</div>
 	</footer> -->
-	</div>
+		</div>
 	</footer>
+	<script type="text/javascript">
+
+		$(window).on('load', function () {
+
+			$('#demo1').nineslider();
+
+		});
+
+	</script>
 </body>
 
 </html>
