@@ -20,26 +20,76 @@
 
 <body>
 	<div class="wrapper" id="first-section">
+		<header class="header">
+			<div class="header__container _container">
+				<a href="." class="header__logo">
+					ANPR
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#first-section" class="menu__link">Prima pagina</a>
+						</li>
+						<li class="menu__item">
+							<a href="#three-section" class="menu__link">Legislația</a>
+						</li>
+						<li class="menu__item">
+							<a href="#fourth-section" class="menu__link">Activitate</a>
+						</li>
+						<li class="menu__item">
+							<a href="#contacte" class="menu__link">Contacte</a>
+						</li>
+						<li class="menu__item lang">
+							<a href="./pages/ro.html" class="menu__link"><img src="./img/flag/ro_flag.png" alt=""
+									height="30px" width="40px" </a>
+						</li>
+						<li class="menu__item lang">
+							<a href="./pages/ro.html" class="menu__link"><img src="./img/flag/ru_flag.png" alt=""
+									height="25px" width="40px" </a>
+						</li>
+					</ul>
+
+				</nav>
+				<button id="burger__menu">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5 7H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 12H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 17H19" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<div class="header__slider" id="slider">
+					<button id="close__burger"><svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle cx="12" cy="12" r="9" fill="#7E869E" fill-opacity="0.25" />
+							<path d="M16 8L8 16" stroke="#222222" stroke-width="1.2" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 8L16 16" stroke="#222222" stroke-width="1.2" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</button>
+					<ul class="menu__list-slide">
+						<li class="list__item slide_item"><a href="#first-section" class="menu__link">Prima pagina</a>
+						</li>
+						<li class="list__item slide_item"><a href="#three-section" class="menu__link">Legislația</a>
+						</li>
+						<li class="list__item slide_item"><a href="#fourth-section" class="menu__link">Activitate</a>
+						</li>
+
+						<li class="list__item slide_item">
+							<a href="#contacte" class="menu__link">Contacte</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+	</div>
+	<div class="wrapper" id="first-section">
 		<div class="supheader">
 
 			<ul class="menu__list spjnz">
-
-				<li class="menu__item">
-					<a href="#second-section" class="menu__link">Prima pagină</a>
-				</li>
-				<li class="menu__item">
-					<a href="#three-section" class="menu__link">Legislația</a>
-				</li>
-				<li class="menu__item">
-					<a href="#fourth-section" class="menu__link">Activitate</a>
-				</li>
-				<li class="menu__item">
-					<a href="#contacte" class="menu__link">Contacte</a>
-				</li>
 			</ul>
-
 			<div class="main-block__image _ibg">
-
 				<ul id="demo1">
 					<li>
 						<img src="img/Slider/close-up-sound-engineer-studio.jpg" alt="cover">
@@ -48,15 +98,15 @@
 						<img src="img/Slider/digital-mixer-recording-studio.jpg" alt="test">
 					</li>
 				</ul>
-
 			</div>
 			<div class="supheader__wrapper">
 				<h1 style="text-align: left;" class=" heading"> Asociația <br> Națională<br> Patronală a<br>
 					Radiodifuzorilor</h1>
 			</div>
-			<div class="mt-12 hidden lg:flex"><button type="button" class="button_primary">Alăturați-vă
-					Asociației</button><a href="#form" class="button_secondary ">Completează
-					formularul</a></div>
+			<div class="mt-12 hidden lg:flex"><button type="button" class="button_primary"><a
+						href="./pdf/ro/Conditiile aderarii.pdf" target="_blank"> Condițiile de aderare</a></button><a
+					href="./pdf/ro/Cerere-model_aderare_ANPR.pdf" target="_blank" class="button_secondary ">Descărcați
+					cererea</a></div>
 		</div>
 
 		<main class="page__main-block">
@@ -238,16 +288,12 @@
 		</section>
 		<section class="Legislatia" id="three-section">
 			<div class="activitate__container _container">
-
 				<div class="activitate__body">
-
 					<div class="activitate__content">
 						<div class="activitate__top">
 							<h2 class="activitate__title"> Consiliul de Administrare</h2>
-
 						</div>
 						<div class="activitate__items">
-
 							<div class="activitate__item item-whoweare">
 								<div class="item-activitate__body">
 									<div class="item-Legislatia__title">
@@ -269,10 +315,8 @@
 										<a href="./pdf/consiliu.pdf" target="_blank">
 											Membri ai Consiliului de Administratie</a>
 									</div>
-
 								</div>
 							</div>
-
 		</section>
 	</div>
 
@@ -284,63 +328,106 @@
 	<div class="page__clients clients" id="Deținătorii-de-licențe">
 		<div class="clients__container _container">
 			<div class="clients__header header-block">
-				<h2 class="header-block__title">Membre</h2>
-				<div class="header-block__sub-title_m">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.
-				</div>
+				<h2 class="header-block__title"><a href="./pdf/membre.pdf" target="_blank"> Membre</a></h2>
+
 			</div>
 			<div class="clients__items">
 
-				<div class="clients__item card ">
-					<p> 1. “A. VIDEO CONTENT” SRL (TV Cinema 1)</p>
+				<div class="clients__item ">
+					<p> “A. VIDEO CONTENT” SRL (TV Cinema 1)</p>
 				</div>
 
-				<div class="clients__item card ">
-					<p> 2. “AER-COMUNICAȚIE” SRL (Radio 7)</p>
+				<div class="clients__item ">
+					<p> “AER-COMUNICAȚIE” SRL (Radio 7)</p>
 				</div>
-				<div class="clients__item card">
+				<div class="clients__item">
 					<img src="./img/license_radio/03_авторадио.png" alt="clients">
 				</div>
 				<div class="clients__item">
 					<img src="./img/tmp_memers/europe.svg" alt="">
 				</div>
-				<div class="clients__item">5. “BRAVO TV” SRL (Bravo TV)
+				<div class="clients__item"> “BRAVO TV” SRL (Bravo TV)
 				</div>
-				<div class="clients__item card">
+				<div class="clients__item">
+					<img src="./img/license_radio/06_rlive_tv.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<img src="./img/license_radio/07_megapolis-fm.png" alt="clients">
+				</div>
+				<div class="clients__item">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115"
+						height="55" viewBox="0 0 115 55">
+						<defs>
+							<path id="371ua"
+								d="M1083.13 69.85l-5.75-9.24h-3.43v9.24H1067V41.49h10.8c7.27 0 11.66 3.73 11.66 9.56 0 3.85-1.9 6.77-5.3 8.3l6.66 10.5h-7.7zm-9.18-15.6h4.8c2.48 0 3.47-1.66 3.47-3.2 0-1.54-1-3.2-3.47-3.2h-4.8z" />
+							<path id="371ub"
+								d="M1120.91 41.49v15.8c0 8.52-5.3 13.19-12.85 13.19-7.59 0-12.85-4.67-12.85-13.2V41.5h6.85v16.04c0 4.06 2.25 6.58 6 6.58 3.76 0 6-2.52 6-6.58V41.49h6.85" />
+							<path id="371uc"
+								d="M1154.45 27a27.34 27.34 0 0 0-27.27 27.41 27.34 27.34 0 0 0 27.27 27.42 27.34 27.34 0 0 0 27.27-27.42A27.34 27.34 0 0 0 1154.45 27zm8.9 38.25h-3.78l-6.47-14.75h-5.69v14.75h-4.54V50.5h-5.67v-4.26h19.13l4.87 11.62.27.84.27-.84 4.86-11.62h5.1z" />
+						</defs>
+						<g>
+							<g transform="translate(-1067 -27)">
+								<use fill="#000000" xlink:href="#371ua" />
+							</g>
+							<g transform="translate(-1067 -27)">
+								<use fill="#00000" xlink:href="#371ub" />
+							</g>
+							<g transform="translate(-1067 -27)">
+								<use fill="#00000" xlink:href="#371uc" />
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/09_aquarelle.png" alt="clients">
+				</div>
+				<div class="clients__item">
 					<div class="front"><img src="img/license_radio/10_dance.png" alt="clients"></div>
 				</div>
 				<div class="clients__item">
 					<img src="img/license_radio/11_Love.png" alt="clients">
 				</div>
-				<div class="clients__item" class="">12. “MEDIA PRODUCTION TV” SRL (REN TV)
+				<div class="clients__item" class=""> “MEDIA PRODUCTION TV” SRL (REN TV)
 				</div>
 				<div class="clients__item">
 					<img src="img/license_radio/13_zum2.png" alt="clients">
 				</div>
-				<div class="clients__item">14. “NOROC MEDIA” SRL (Noroc TV, Noroc FM)
+				<div class="clients__item">“NOROC MEDIA” SRL (Noroc TV, Noroc FM)
 				</div>
 				<div class="clients__item">
 					<img src="img/license_radio/15_zum1.png" alt="clients">
 				</div>
+				<div class="clients__item">
+					<img src="./img/license_radio/16_радио21.png" alt="clients">
+				</div>
 
-				<div class="clients__item">17. “RADIO HIT” SRL (Hit FM)
+				<div class="clients__item"> “RADIO HIT” SRL (Hit FM)
+				</div>
+				<div class="clients__item">
+					<img src="/img/license_radio/18_retro.png" alt="">
+				</div>
+				<div class="clients__item">
+					<img src="img/license_radio/19_новое.png" alt="clients">
 				</div>
 				<div class="clients__item">
 					<img src="img/license_radio/20_rvs.png" alt="clients">
 				</div>
-				<div class="clients__item">21. “RADIO TOP” SRL (Radio Rock's)
+				<div class="clients__item"> “RADIO TOP” SRL (Radio Rock's)
 				</div>
 				<div class="clients__item">
 					<img src="img/license_radio/22_radiomd.png" alt="clients">
 				</div>
-				<div class="clients__item">23. “RECORD TEAM” SRL (Radio Record)
+				<div class="clients__item">“RECORD TEAM” SRL (Radio Record)
 				</div>
-				<div class="clients__item">25. “SELECTCANAL-TV” SRL (TV N4)
+				<div class="clients__item">
+					<img src="img/license_radio/24_Jurnal.png" alt="clients">
+				</div>
+				<div class="clients__item">“SELECTCANAL-TV” SRL (TV N4)
 				</div>
 				<div class="clients__item">
 					<img src="img/license_radio/26_Zona M.png" alt="clients">
 				</div>
-				<div class="clients__item">27. “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)
+				<div class="clients__item"> “TELESISTEM TV” SRL (TV Primul în Moldova, Accent TV)
 				</div>
 			</div>
 		</div>
@@ -348,11 +435,11 @@
 	<section class="page__subscribe subscribe">
 		<div class="subscribe__container _container">
 			<div class="subscribe__body">
-				<h4 class="subscribe__title">Lorem ipsum dolor sit amet.</h4>
+				<h4 class="subscribe__title">Abonați-vă la știri</h4>
 				<form action="#" class="subscribe__form">
 					<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
 						class="subscribe__input">
-					<button type="submit" class="subscribe__button">Subscribe</button>
+					<button type="submit" class="subscribe__button">Abonati-va</button>
 				</form>
 			</div>
 		</div>

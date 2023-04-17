@@ -135,8 +135,10 @@ body {
 }
 
 /* ---ШАПКА------------------------------------------------------------------------- */
+.lang {
+}
 .header {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
@@ -342,6 +344,8 @@ body {
   font-weight: 700;
   font-size: 40px;
   padding-top: 25px;
+  margin-bottom: 50px;
+  color: #495057;
 }
 .header-block__title:not(:last-child) {
   margin: 0px 0px 10px 0px;
