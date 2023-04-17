@@ -1204,7 +1204,7 @@ body {
 }
 .footer__top {
   background: #17213c;
-  padding: 35px 0;
+  padding: 35px 0 0 0;
 }
 .footer__main {
 }
@@ -1892,4 +1892,11 @@ select.form-control:focus::-ms-value {
     flex-direction: column;
     gap: 15px;
   }
+}
+
+.copyright {
+  font-weight: 100;
+  color: white;
+  text-align: end;
+  font-size: 14px;
 }
