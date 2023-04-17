@@ -3,7 +3,6 @@ $(document).ready(() => {
     $("#slider").toggleClass("show");
   });
   $("#close__burger").click(function () {
-    console.log("chow");
     $("#slider").toggleClass("show");
   });
   $(".header__menu a").on("click", function () {

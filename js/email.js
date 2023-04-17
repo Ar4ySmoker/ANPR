@@ -4,6 +4,7 @@
 })();
 
 window.onload = function () {
+  const tmp = document.getElementById("contact-form");
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
@@ -11,13 +12,20 @@ window.onload = function () {
       // generate a five digit number for the contact_number variable
       this.phone.value = (Math.random() * 100000) | 0;
       // these IDs from the previous steps
-      emailjs.sendForm("contact_service", "contact_form", this).then(
-        function () {
-          console.log("SUCCESS!");
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
+      emailjs
+        .sendForm(
+          "service_7u8gnsh",
+          "template_e271ne4",
+          event.target,
+          "2ZIyu-7ULfWbAXi5w"
+        )
+        .then(
+          function () {
+            console.log("SUCCESS!");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+          }
+        );
     });
 };
