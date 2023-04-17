@@ -66,9 +66,19 @@ $(document).ready(() => {
     return false;
   });
 
-  $(".card").flip();
+  $(".menu__list-slide a").on("click", function () {
+    let href = $(this).attr("href");
 
-  $(function () {
-    $(".banner").unslider();
+    $("html, body").animate(
+      {
+        scrollTop: $(href).offset().top - 75,
+      },
+      {
+        duration: 650, // по умолчанию «400»
+        easing: "swing", // по умолчанию «swing»
+      }
+    );
+    $("#slider").removeClass("show");
+    return false;
   });
 });

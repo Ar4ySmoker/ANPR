@@ -1228,6 +1228,9 @@ body {
   .footer__column {
     flex: 0 1 50%;
   }
+  .footer__row {
+    justify-content: flex-start;
+  }
 }
 
 .footer__label {
