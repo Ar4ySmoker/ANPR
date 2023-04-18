@@ -82,8 +82,7 @@ body {
 ._ibg {
   position: relative;
 }
-._ibg img {
-}
+
 /* НадШапка ------------------------------------------------------------------------- */
 .supheader {
   /* width: 100%; */
@@ -171,9 +170,6 @@ body {
   font-weight: 700;
   color: inherit;
 }
-.header__menu {
-  /* margin: 0px 0px 0px 133px; */
-}
 
 .header__slider {
   display: none;
@@ -210,19 +206,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.menu__item {
-}
+
 .show {
   left: 0;
   background-color: white;
-}
-.ul {
-}
-.menu__item {
-}
-.slide__item {
-}
-.slide_item {
 }
 
 @media (max-width: 479px) {
@@ -1901,8 +1888,8 @@ select.form-control:focus::-ms-value {
   }
   .supheader h1 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 35px;
   }
   .left__block {
     gap: 25px;
@@ -1920,10 +1907,8 @@ select.form-control:focus::-ms-value {
     align-items: center;
   }
   .nbs-nineslider-container img {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 35vh;
-    max-height: 80%;
+    min-height: 40vh;
+    max-height: 40vh;
   }
 
   .button_secondary {
