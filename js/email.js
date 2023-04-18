@@ -4,7 +4,6 @@
 })();
 
 window.onload = function () {
-  const tmp = document.getElementById("contact-form");
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
